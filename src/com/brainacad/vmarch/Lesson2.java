@@ -12,7 +12,6 @@ public class Lesson2 {
         s1 = sc.nextLine();
         s2 = sc.nextLine();
         System.out.print(s1 + " " + s2);
-        sc.close();
     }
 }
 

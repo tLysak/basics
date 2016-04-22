@@ -12,6 +12,7 @@ public class Lesson2 {
         System.out.print(a + b);
     }
 
+
 }
 
 

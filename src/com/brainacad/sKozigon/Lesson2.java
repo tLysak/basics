@@ -10,5 +10,6 @@ public class Lesson2 {
         System.out.println(line1 + line2);
         System.out.println("Hello!");
 
+
     }
 }

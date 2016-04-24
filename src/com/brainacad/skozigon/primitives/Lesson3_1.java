@@ -5,7 +5,7 @@ public class Lesson3_1 {
     public static void main(String[] args) {
         byte b = 124;
         short s = 077777;
-        int i = (char)256;
+        int i ='H';
         long l =9223332465465264823l;
         double d = 2.35e15;
         char c = '\u0548';

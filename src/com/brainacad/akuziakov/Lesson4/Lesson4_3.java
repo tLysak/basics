@@ -8,30 +8,30 @@ public class Lesson4_3 {
         for (int i = 0; i < 11; i++) {
             switch (i) {
                 case 0:
-                    printValue = "*|\t";
+                    printValue = "* |\t";
                     break;
                 case 1:
                     printValue = "";
                     break;
                 default:
-                    printValue = i - 1 + "|\t";
+                    printValue = i - 1 + " |\t";
                     break;
             }
             System.out.print(printValue);
 
             for (int j = 1; j < 10; j++) {
-                switch (i){
+                switch (i) {
                     case 0:
-                        printValue=j + "\t";
+                        printValue = j + "\t";
                         break;
                     case 1:
-                        printValue = "____";
+                        printValue = "----";
                         break;
                     default:
                         printValue = (i - 1) * j + "\t";
                         break;
                 }
-                System.out.println(printValue);
+                System.out.print(printValue);
             }
             System.out.println();
         }

@@ -5,18 +5,16 @@ import java.util.Arrays;
 public class Lesson5_1 {
     public static void main(String[] args) {
 
-        int count=0;
-        for (int i=1;i<=50;i++){
-            if (0==i%2){
-                count++;
+        int startValue = 1, endValue = 50, arrayLength = endValue / 2;
+
+        int[] oddNumbers = new int[arrayLength];
+
+        for (int i = startValue, currentIndex = 0; i <= endValue; i++) {
+            if (0 == i % 2) {
+                oddNumbers[currentIndex++] = i;
             }
         }
-        int[]oddNumbers=new int[count];
-        for (int i=1, j=0;i<=50;i++){
-            if (0==i%2){
-                oddNumbers[j++]=i;
-            }
-        }
+
         System.out.println(Arrays.toString(oddNumbers));
     }
 }

@@ -7,12 +7,12 @@ import java.util.Scanner;
  */
 public class lesson2 {
     public static void main(String[] args) {
-       Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter your first line here");
         String firstln = scan.nextLine();
         System.out.println("Enter your second line here");
         String secondln = scan.nextLine();
-        System.out.println( firstln + " " + secondln);
+        System.out.println(firstln + " " + secondln);
     }
 
 }

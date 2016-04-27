@@ -15,13 +15,13 @@ public class OneToNSum {
         int n = scan.nextInt();
         int average = 0;
         int sum = 0;
+        int num =0;
         for (int i=1;i<=n; i++){
             sum +=i;
-            average = i;
+            num = i;
         }
-        average = sum/average;
+        average = sum/num;
 
-        System.out.println("sum is " + sum);
-        System.out.println("average is " + average);
-    }
+        System.out.println("sum of the range 1..." + num + " is " + sum + "; and the average number of the range is " + average );
+            }
 }

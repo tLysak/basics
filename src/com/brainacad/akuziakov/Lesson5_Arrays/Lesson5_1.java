@@ -15,6 +15,13 @@ public class Lesson5_1 {
             }
         }
 
-        System.out.println(Arrays.toString(oddNumbers));
+        System.out.print(Arrays.toString(oddNumbers));
+
+        System.out.print("\n ");
+
+        for (int element :
+                oddNumbers) {
+            System.out.print(element+", ");
+        }
     }
 }

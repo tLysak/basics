@@ -9,11 +9,9 @@ public class Lesson4_3 {
         }
         System.out.println();
         System.out.print("------------------------------");
-
         for (a = 1; a < 10; ++a) {
             System.out.println();
             System.out.print(a + " | ");
-
             for (int b = 1; b < 10; ++b) {
                 int c = a * b;
                 if (c <= 9) {

@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.matrix;
 
 public class Matrix {
     public void initialize(int length, int height, int... values) {

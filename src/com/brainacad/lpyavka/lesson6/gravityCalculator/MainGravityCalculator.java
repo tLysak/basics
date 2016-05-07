@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.gravityCalculator;
 
 public class MainGravityCalculator {
     public static void main(String[] args) {

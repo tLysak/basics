@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.gravityCalculator;
 
 public class GravityCalculator {
     static final double ACCELERATION = -9.81;

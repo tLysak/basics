@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.myMath;
 
 public class MyMath {
      static final double PI  = 3.14;

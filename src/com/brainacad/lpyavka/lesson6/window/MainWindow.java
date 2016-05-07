@@ -1,4 +1,6 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.window;
+
+import com.brainacad.lpyavka.lesson6.window.MyWindow;
 
 public class MainWindow {
     public static void main(String[] args) {

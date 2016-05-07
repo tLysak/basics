@@ -1,4 +1,6 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.employee;
+
+import com.brainacad.lpyavka.lesson6.employee.Employee;
 
 public class MainEmployee {
     public static void main(String[] args) {

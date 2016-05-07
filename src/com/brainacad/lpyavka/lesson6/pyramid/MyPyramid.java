@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.pyramid;
 
 public class MyPyramid {
 

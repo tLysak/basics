@@ -1,4 +1,6 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.matrix;
+
+import com.brainacad.lpyavka.lesson6.matrix.Matrix;
 
 public class MainMatrix {
     public static void main(String[] args) {

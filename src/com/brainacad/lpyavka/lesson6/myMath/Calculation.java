@@ -1,4 +1,6 @@
-package com.brainacad.lpyavka.lesson6;
+package com.brainacad.lpyavka.lesson6.myMath;
+
+import com.brainacad.lpyavka.lesson6.myMath.MyMath;
 
 import java.util.Arrays;
 

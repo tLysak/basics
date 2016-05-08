@@ -1,13 +1,13 @@
 package com.brainacad.akuziakov.Lesson5_Arrays;
 
-import sun.security.mscapi.KeyStore;
+//import sun.security.mscapi.KeyStore;
 
 import java.util.Arrays;
 
 public class Lesson5_4 {
     public static void main(String[] args) {
 
-        final int[]  arrayForBinarySearch = {3, 2, 14, 6, 11, 32, 1, 4};
+        final int[] arrayForBinarySearch = {3, 2, 14, 6, 11, 32, 1, 4};
 
 //        final int searchValue=11;
 //
@@ -29,5 +29,5 @@ public class Lesson5_4 {
 //            int[] newArr=Arrays.copyOf(arr,)// TODO: 4/27/2016 Проработать методы копирования массивов. Необходимо передать копию второй половины массива arr
 //            return MyBinarySearch(Arrays.copyOf())
 //        }
-//    }
-//}
+    }
+}

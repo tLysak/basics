@@ -4,7 +4,7 @@ public class Computer {
 
     private String manufacturer;
     private long serialNumber;
-    private float price;
+    private float price = 120.00f;
     private int quantityCPU;
     private int frequencyCPU;
 

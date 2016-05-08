@@ -1,6 +1,5 @@
-package com.brainacad.agudyma.lesson5;
+package com.brainacad.lpyavka.lesson5;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**

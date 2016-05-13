@@ -1,4 +1,4 @@
-package com.brainacad.akuziakov.Lesson8_Jars.com.brainacad.shapes;
+package com.brainacad.akuziakov.Lesson8_Jars.shapes;
 
 public class Triangle {
     final private double sideOne;

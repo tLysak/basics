@@ -1,6 +1,6 @@
-package com.brainacad.akuziakov.Lesson8_Jars.com.brainacad.main;
+package com.brainacad.akuziakov.Lesson8_Jars.main;
 
-import com.brainacad.akuziakov.Lesson8_Jars.com.brainacad.shapes.Triangle;
+import com.brainacad.akuziakov.Lesson8_Jars.shapes.Triangle;
 
 import java.util.Random;
 

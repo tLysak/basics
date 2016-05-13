@@ -22,6 +22,6 @@ public class OneToNSum {
         }
         average = sum/num;
 
-        System.out.println("sum of the range 1..." + num + " is " + sum + "; and the average number of the range is " + average );
+        System.out.println("sum of the range 1.." + num + " is " + sum + "; and the average number of the range is " + average );
             }
 }

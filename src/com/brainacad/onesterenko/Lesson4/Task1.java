@@ -16,10 +16,10 @@ package com.brainacad.onesterenko.Lesson4;
  */
 public class Task1 {
     public static void main(String[] args) {
-        for (int i =1; i<=8; i++){
-               for(int h=i; h>=1; h--){
-                System.out.print(h+" ");
+        for (int row =1; row<=8; row++){
+               for(int line=row; line>=1; line--){
+                System.out.print("a "+ line);
                }
-            System.out.println();
+            System.out.println("b");
     }
 }}

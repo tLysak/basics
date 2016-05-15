@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson8.com.brainacad.shapes;
+package com.brainacad.lpyavka.lesson8.shapes;
 
 public class Triangle {
     final private double sideOne;

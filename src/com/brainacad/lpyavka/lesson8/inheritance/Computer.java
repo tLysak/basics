@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson8.com.brainacad.inheritance;
+package com.brainacad.lpyavka.lesson8.inheritance;
 
 public class Computer extends Device {
     private int frequency = 500;

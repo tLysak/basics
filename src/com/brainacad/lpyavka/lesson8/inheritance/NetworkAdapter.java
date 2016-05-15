@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson8.com.brainacad.inheritance;
+package com.brainacad.lpyavka.lesson8.inheritance;
 
 public class NetworkAdapter extends Device {
     private long speed = 200L;

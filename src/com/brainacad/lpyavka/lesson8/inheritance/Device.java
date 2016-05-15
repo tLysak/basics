@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson8.com.brainacad.inheritance;
+package com.brainacad.lpyavka.lesson8.inheritance;
 
 public class Device {
     private double price= 10.0;

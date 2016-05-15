@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson8.com.brainacad.inheritance;
+package com.brainacad.lpyavka.lesson8.inheritance;
 
 public class MainClass {
     public static void main(String[] args) {

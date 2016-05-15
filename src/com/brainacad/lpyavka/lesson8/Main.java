@@ -1,6 +1,6 @@
-package com.brainacad.lpyavka.lesson8.com.brainacad;
+package com.brainacad.lpyavka.lesson8;
 
-import com.brainacad.lpyavka.lesson8.com.brainacad.shapes.Triangle;
+import com.brainacad.lpyavka.lesson8.shapes.Triangle;
 
 import java.util.Random;
 

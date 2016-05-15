@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson5;
+package com.brainacad.agudyma.lesson5;
 
 import java.util.Arrays;
 

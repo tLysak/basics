@@ -19,12 +19,14 @@ public class massive2 {
             sum += massive1[i];
 
             int medianNumber;
+/*
         if (massive1.length%2 == 0 ){medianNumber= massive1[massive1.length/2-1] +
                 massive1.length/2+1}
         } else {
             int indexofmedian = massive1.length/2+1;
             medianNumber = massive1[indexofmedian];
                     }
+*/
         }
 
     }

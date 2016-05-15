@@ -1,4 +1,5 @@
-#.idea/
-#*.class
-#out
-#*.iml
+.idea/
+*.class
+out
+*.iml
+basics.iml

@@ -34,7 +34,7 @@ public class Matrix {
 
 
         for (int i = 0; i < h; i++) {
-            System.out.println("Enter " + i + " line: ");
+            System.out.println("Enter " + i + " line:");
             s = sc.nextLine();
 
             char new_mass[] = s.toCharArray();

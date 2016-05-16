@@ -29,6 +29,10 @@ public class Computer extends Device {
 
     private final int frequencyCPU;
 
+    public Computer(){
+        this("IBM", 1, 1000, 2, 2100);
+    }
+
     public Computer(final String manufacturer, final int serialNumber, final float price, final int quantityCPU, final int frequencyCPU) {
         this.manufacturer = manufacturer;
         this.serialNumber = serialNumber;
@@ -47,7 +51,7 @@ public class Computer extends Device {
         this.price = price;
     }
 
-    void view(){
+    void view() {
         System.out.printf("Manufacturer: %s, Serial number: %d, Price: %f, Quantity CPU: %d, Frequency CPU: %d\n",
                 getManufacturer(), getSerialNumber(), getPrice(), getQuantityCPU(), getFrequencyCPU());
     }

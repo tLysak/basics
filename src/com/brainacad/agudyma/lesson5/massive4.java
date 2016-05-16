@@ -1,4 +1,4 @@
-package com.brainacad.lpyavka.lesson5;
+package com.brainacad.agudyma.lesson5;
 
 /**
  * Created by Sidhartha on 28.04.2016.

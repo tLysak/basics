@@ -2,6 +2,8 @@ package com.brainacad.akuziakov.Lesson9.inheritance.override;
 
 public class Computer extends Device {
 
+    String i;
+
     private final String manufacturer;
     private final int serialNumber;
     private float price;

@@ -16,7 +16,10 @@ public class Computer {
         hashCode = 31 * hashCode + serialNumber;
         return hashCode;
     }
-
+    public Computer(int serialNumber, int quantityCPU)
+    {this.serialNumber =serialNumber;
+        this.quantityCPU = quantityCPU;
+    }
 
     public String getManufacturer() {
         return manufacturer;

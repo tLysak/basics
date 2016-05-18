@@ -55,4 +55,13 @@ public class Computer extends Device {
         System.out.printf("Manufacturer: %s, Serial number: %d, Price: %f, Quantity CPU: %d, Frequency CPU: %d\n",
                 getManufacturer(), getSerialNumber(), getPrice(), getQuantityCPU(), getFrequencyCPU());
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj==this)return true;
+        if (null==obj||getClass()!=obj.getClass())return false;
+        Computer computer= ((Computer) obj);
+        if (serialNumber!=computer.serialNumber)return false;
+        return true;
+    }
 }

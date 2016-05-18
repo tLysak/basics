@@ -11,5 +11,11 @@ public class MainApp {
 
         NetworkAdapter myNetworkAdapter=new NetworkAdapter();
         System.out.println(myNetworkAdapter);
+
+        Computer computer1=new Computer("Dell",1,500,4,2800);
+        Computer computer2=new Computer("Samsung",2,500,2,2200);
+        System.out.println(computer1.equals(computer2));
+        computer1=computer2;
+        System.out.println(computer1.equals(computer2));
     }
 }

@@ -2,7 +2,7 @@ package com.brainacad.onesterenko.oop;
 
 /**
  * Created by User on 29.04.2016.
- */
+
 public class MatrixWorker {
     public static void main(String[] args) {
         Matrix firstMatrix = new Matrix();
@@ -14,3 +14,4 @@ public class MatrixWorker {
         System.out.println();
     }
 }
+ */

@@ -1,12 +1,11 @@
 package com.brainacad.onesterenko.Arrays;
 
-import com.brainacad.onesterenko.oop.Computer;
 
 import java.util.Random;
 
 /**
  * Created by User on 29.04.2016.
- */
+
 public class EntryPoint {
     private static final int RANGE = 9999;
     public static void main(String[] args) {
@@ -24,3 +23,4 @@ public class EntryPoint {
         }
     }
 }
+*/

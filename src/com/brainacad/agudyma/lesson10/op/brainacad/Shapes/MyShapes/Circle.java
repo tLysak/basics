@@ -18,14 +18,11 @@ public class Circle extends Shape{
 
     @Override
     public String toString() {
-        System.out.println("Color of Circle " + color +","+ " Radius =" + radius);
-        System.out.println("Shape area = " + calcArea());
 
-
-        return getColor();
+        return ":" + getColor()+", radius :"+ getRadius() + " "+"Shape area : " + String.valueOf(calcArea());
     }
 
-    public double calcArea(){
+    private double calcArea(){
         double resultArea = PI *Math.pow(radius,2);
         return resultArea;
     }

@@ -12,7 +12,7 @@ public class Main {
         System.out.println(rectangle1);
         Triangle triangle1 = new Triangle(10,20,30,"blue");
         System.out.println("This is " + triangle1.color + " Triangle " + " side A "+triangle1.sideA+", side B " + triangle1.sideB+ ", side C "+ triangle1.sideC);
-        System.out.println(triangle1);
+        System.out.println(triangle1.calcArea());
     }
 
 }

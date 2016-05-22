@@ -7,7 +7,6 @@ package com.brainacad.agudyma.lesson10.op.brainacad.Shapes.MyShapes;
 public class Rectangle extends Shape {
     double height;
     double width;
-    String color;
 
 
     public Rectangle(double height, double width, String color) {
@@ -16,7 +15,8 @@ public class Rectangle extends Shape {
         this.color = color;
     }
 
-    private double calcArea() {
+    @Override
+    public double calcArea() {
         double resultArea = height * width;
         return resultArea;
     }
@@ -24,7 +24,7 @@ public class Rectangle extends Shape {
     @Override
     public String toString(){
 
-        return "Shape area is: " + String.valueOf(calcArea()) ;
+        return "Shape Area = : " + String.valueOf(calcArea()) ;
     }
 }
 

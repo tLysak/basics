@@ -4,17 +4,19 @@ public class MainString2 {
     public static void main(String[] args) {
         String myString1 = "Cartoon";
         String myString2 = "Tomcat";
-        char[] cartoon = myString1.toLowerCase().toCharArray();
+        String[] cartoon = myString1.toLowerCase().split("");
 
         StringBuilder newString = new StringBuilder("");
         myString2 = myString2.toLowerCase();
-        for (char letter : cartoon) {
-            int result = myString2.indexOf(letter);
-            if (result == -1) {
-                newString.append(letter).append(" ");
-            }
+        StringBuilder result = new StringBuilder();
+        for (String letter : cartoon) {
+
+            //TODO THIS IS NOT MY; REFACTOR
+          if(myString2.contains(letter) && !result.toString().contains(letter)) {
+              result.append(letter);
+          }
         }
         System.out.println("Letters, which are present in \"Cartoon\", but absent in \"tomcat\": "
-                + newString.toString());
+                + result.toString());
     }
 }

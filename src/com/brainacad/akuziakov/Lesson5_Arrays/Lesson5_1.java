@@ -21,7 +21,7 @@ public class Lesson5_1 {
 
         for (int element :
                 oddNumbers) {
-            System.out.print(element+", ");
+            System.out.print(element + ", ");
         }
     }
 }

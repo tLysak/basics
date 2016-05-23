@@ -29,7 +29,7 @@ public class Computer extends Device {
 
     private final int frequencyCPU;
 
-    public Computer(){
+    public Computer() {
         this("IBM", 1, 1000, 2, 2100);
     }
 
@@ -58,10 +58,10 @@ public class Computer extends Device {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj==this)return true;
-        if (null==obj||getClass()!=obj.getClass())return false;
-        Computer computer= ((Computer) obj);
-        if (serialNumber!=computer.serialNumber)return false;
+        if (obj == this) return true;
+        if (null == obj || getClass() != obj.getClass()) return false;
+        Computer computer = ((Computer) obj);
+        if (serialNumber != computer.serialNumber) return false;
         return true;
     }
 }

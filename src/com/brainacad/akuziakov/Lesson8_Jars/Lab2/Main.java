@@ -3,8 +3,8 @@ package com.brainacad.akuziakov.Lesson8_Jars.Lab2;
 public class Main {
 
     public static void main(String[] args) {
-        Computer computer=new Computer();
-        NetworkAdapter networkAdapter=new NetworkAdapter();
+        Computer computer = new Computer();
+        NetworkAdapter networkAdapter = new NetworkAdapter();
 
         computer.setPrice(5000.0);
         computer.setFrequency(2400);

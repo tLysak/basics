@@ -18,7 +18,7 @@ public class Matrix {
     }
 
     public void add(final Matrix externalMatrix) {
-        if (null==externalMatrix||null==externalMatrix.getState()){
+        if (null == externalMatrix || null == externalMatrix.getState()) {
             return;
         }
 
@@ -30,10 +30,10 @@ public class Matrix {
         }
     }
 
-    public String getStringState(){
-        String result="";
-        for (int[] line:state){
-            result+= Arrays.toString(line)+"\n";
+    public String getStringState() {
+        String result = "";
+        for (int[] line : state) {
+            result += Arrays.toString(line) + "\n";
         }
         return result;
     }

@@ -1,6 +1,4 @@
-package com.brainacad.agudyma.oop.teststring2;
-
-import com.sun.org.apache.xpath.internal.SourceTree;
+package com.brainacad.agudyma.oop.testString2;
 
 import java.util.Arrays;
 
@@ -22,10 +20,11 @@ public class Main {
 
         for (i = 0; i < myStr1.length(); i++) {
             for (n = 0; n < myStr2.length(); n++) {
-                if (myStr1.charAt(i) != myStr2.charAt(n)) {
-                    continue;
+                if (myStr1.charAt(i) == myStr2.charAt(n)) {
+                    System.out.println(myStr1.charAt(i) + " with index " + myStr1.indexOf(myStr1.charAt(i)) +" equals "+ myStr2.charAt(n));
+                    ;
                 }
-                System.out.println(myStr1.charAt(i) + " with index " + myStr1.indexOf(myStr1.charAt(i)) +" equals "+ myStr2.charAt(n));
+//                System.out.println(myStr1.charAt(i) + " with index " + myStr1.indexOf(myStr1.charAt(i)) +" equals "+ myStr2.charAt(n));
             }
         }
         char[] charArray1 = myStr1.toCharArray();
@@ -36,9 +35,10 @@ public class Main {
 
         for (i = 0; i < charArray1.length; i++) {
             for (n = 0; n < charArray2.length; n++) {
-                if (charArray1[i] == charArray2[n]) {
+                if (charArray1[i] == charArray2[n] ) {
                     System.out.println(myStr1.charAt(i) + " with index " + myStr1.indexOf(myStr1.charAt(i)) +" equals "+ myStr2.charAt(n) + " with index " + myStr2.indexOf(myStr2.charAt(n)));
                 }
+
             }
         }
     }

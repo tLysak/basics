@@ -10,7 +10,7 @@ public class Main {
         String myStr = "This is String, split by StringTokenizer. Created by Student:Name of Student";
         StringTokenizer stringTokenizer = new StringTokenizer(myStr);
         while (stringTokenizer.hasMoreElements()){
-            System.out.println(stringTokenizer.nextToken(" ,.:"));
+            System.out.println(stringTokenizer.nextToken(" "));
         }
     }
 }

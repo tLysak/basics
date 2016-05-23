@@ -25,8 +25,8 @@ public class Triangle {
 
     public double getSquare() {
         double perimeter = sideOne + sideTwo + sideThree;
-        double halfPerimeter=perimeter/2;
+        double halfPerimeter = perimeter / 2;
 
-        return Math.sqrt(halfPerimeter*(halfPerimeter-sideOne)*(halfPerimeter-sideTwo)*(halfPerimeter-sideThree));
+        return Math.sqrt(halfPerimeter * (halfPerimeter - sideOne) * (halfPerimeter - sideTwo) * (halfPerimeter - sideThree));
     }
 }

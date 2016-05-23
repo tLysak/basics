@@ -1,5 +1,7 @@
 package com.brainacad.tlysak.oop.lesson8.inheritance;
 
+import com.brainacad.tlysak.oop.lesson8.inheritance.test.Device;
+
 public class Computer extends Device {
     private int frequency;
     private int memory;

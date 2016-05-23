@@ -20,7 +20,7 @@ public class Triangle extends Shape {
     @Override
     public double calcArea() {
 
-        double s = (getSideA()+getSideB()+getSideC())/2;
+        double s = (getSideA() + getSideB() + getSideC()) / 2;
 
         return sqrt(s*(s-getSideA())*(s-getSideB())*(s-getSideC()));
     }

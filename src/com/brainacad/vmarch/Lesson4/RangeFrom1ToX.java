@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Lesson4;
+package com.brainacad.vmarch.lesson4;
 
 import java.util.Scanner;
 

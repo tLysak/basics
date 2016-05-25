@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Lesson6.MyWindow;
+package com.brainacad.vmarch.lesson6.mywindow;
 
 public class MyWindow {
 
@@ -7,42 +7,6 @@ public class MyWindow {
     private int numberOfGlass;
     private String color;
     private boolean isOpen;
-
-    public double getWidth() {
-        return width;
-    }
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public int getNumberOfGlass() {
-        return numberOfGlass;
-    }
-    public void setNumberOfGlass(int numberOfGlass) {
-        this.numberOfGlass = numberOfGlass;
-    }
-
-    public String getColor() {
-        return color;
-    }
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public boolean getIsOpen() {
-        return isOpen;
-    }
-    public void setIsOpen(boolean isOpen) {
-        this.isOpen = isOpen;
-    }
-
 
     public MyWindow() {
         this.width = 1.3;
@@ -58,6 +22,7 @@ public class MyWindow {
         this.color = color;
         this.isOpen = isOpen;
     }
+
     public MyWindow(double width, double height) {this(width, height, 4, "grey", true);}
     public MyWindow(double width, double height, int numberOfGlass) {
         this.width = width;
@@ -65,12 +30,6 @@ public class MyWindow {
         this.numberOfGlass = numberOfGlass;
         this.color = "purple";
         this.isOpen = true;
-    }
-
-
-    public void printFields() {
-        System.out.println("Window has \n  width: " + width+ ",\n  height: "+height+ ",\n  numberOfGlass: "
-                +numberOfGlass+ ",\n  color: " + color +",\n  isOpen: "+ isOpen +"\n-------------");
     }
 
     public static void main(String[] args) {
@@ -91,5 +50,50 @@ public class MyWindow {
             window.printFields();
 
         }
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public int getNumberOfGlass() {
+        return numberOfGlass;
+    }
+
+    public void setNumberOfGlass(int numberOfGlass) {
+        this.numberOfGlass = numberOfGlass;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean getIsOpen() {
+        return isOpen;
+    }
+
+    public void setIsOpen(boolean isOpen) {
+        this.isOpen = isOpen;
+    }
+
+    public void printFields() {
+        System.out.println("Window has \n  width: " + width+ ",\n  height: "+height+ ",\n  numberOfGlass: "
+                +numberOfGlass+ ",\n  color: " + color +",\n  isOpen: "+ isOpen +"\n-------------");
     }
 }

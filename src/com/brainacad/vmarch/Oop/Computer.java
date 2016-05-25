@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Oop;
+package com.brainacad.vmarch.oop;
 
 
 public class Computer {
@@ -21,6 +21,7 @@ public class Computer {
         this.manufacturer = manufacturer;
     }
 
+
     public long getSerialNumber() {
         return serialNumber;
     }
@@ -28,6 +29,7 @@ public class Computer {
     public void setSerialNumber(long serialNumbe) {
         this.serialNumber = serialNumbe;
     }
+
 
     public float getPrice() {
         return price;
@@ -37,6 +39,7 @@ public class Computer {
         this.price = price;
     }
 
+
     public int getQuantityCPU() {
         return quantityCPU;
     }
@@ -44,6 +47,7 @@ public class Computer {
     public void setQuantityCPU(int quantityCPU) {
         this.quantityCPU = quantityCPU;
     }
+
 
     public int getFrequencyCPU() {
         return frequencyCPU;
@@ -53,8 +57,9 @@ public class Computer {
         this.frequencyCPU = frequencyCPU;
     }
 
+
     public void ResultForAll() {
 
-        System.out.println("Serial Number: " + this.serialNumber + " Price: " + this.price);
+        System.out.println("Serial Number: " + this.serialNumber + ",   Price: " + this.price);
     }
 }

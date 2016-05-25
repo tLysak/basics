@@ -16,11 +16,11 @@ public class Main {
     public static void main(String[] args) {
 
     Circle circle = new Circle();
+        Triangle triangle = new Triangle("red",2,9,5);
         System.out.println(circle.toString());
-//    Rectangle rectangle = new Rectangle();
-//        System.out.println(rectangle.toString());
-//    Triangle triangle = new Triangle();
-//        System.out.println(triangle.calcArea());
+
+        System.out.println(triangle.toString());
+        System.out.println(triangle.s);
 
     }
 

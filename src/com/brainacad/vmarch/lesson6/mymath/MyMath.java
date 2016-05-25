@@ -7,14 +7,14 @@ public class MyMath {
     public MyMath() {
     }
 
-    static int[] findMax(int array[]) {
+    static int findMax(int array[]) {
 
-        return array;
+        return array[array.length - 1];
     }
 
-    static int[] findMin(int array[]) {
+    static int findMin(int array[]) {
 
-        return array;
+        return array[0];
     }
 
     public static void main(String[] args) {
@@ -22,10 +22,8 @@ public class MyMath {
         int array[] = {8, 9, 4, 1, 5};
 
         Arrays.sort(array);
-        MyMath.findMax(array);
-        int maxValue = array[0];
-        MyMath.findMin(array);
-        int minValue = array.length - 1;
+        int maxValue = MyMath.findMax(array);
+        int minValue = MyMath.findMin(array);
         System.out.println("Min: " + minValue + ", Max: " + maxValue);
     }
 }

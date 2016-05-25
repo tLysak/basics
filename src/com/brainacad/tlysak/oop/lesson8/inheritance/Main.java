@@ -1,6 +1,10 @@
 package com.brainacad.tlysak.oop.lesson8.inheritance;
 
+import com.brainacad.tlysak.oop.lesson8.inheritance.test.Device;
+import com.brainacad.vmarch.Scanner1;
+
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     private static final int LESS_THEN_THOUSAND = 999;
@@ -12,19 +16,16 @@ public class Main {
 
     public static void main(String[] args) {
         final Device device= createDevice();
-        final Computer computer = createComputer();
-        final NetworkAdapter networkAdapter = createNetworkAdapter();
 
         System.out.println("Device AbstractDevice - s/n:" + device.getSerialNumber() + " price:" + device.getPrice() +
                 " manufacturer:" + device.getManufacturer());
 
-        System.out.println("Device Computer - s/n:" + computer.getSerialNumber() + " price:" + computer.getPrice() +
-                " manufacturer:" + computer.getManufacturer() + " frequency:" + computer.getFrequency() +
-                " memory:" + computer.getMemory());
+                Integer i = 1200;
+        int b = Integer.parseInt("1200");
 
-        System.out.println("Device Network adapter - s/n:" + networkAdapter.getSerialNumber() + " price:"
-                + networkAdapter.getPrice() + " manufacturer:" + networkAdapter.getManufacturer() + " speed:"
-                + networkAdapter.getSpeed());
+
+
+
     }
 
     private static NetworkAdapter createNetworkAdapter() {

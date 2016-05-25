@@ -9,7 +9,7 @@ public class EntryPoint {
 
     public static void main(String[] args) {
 
-        Computer[] computers=new Computer[]{
+        Computer[] computers = new Computer[]{
                 new Computer(),
                 new Computer(),
                 new Computer(),
@@ -18,7 +18,7 @@ public class EntryPoint {
 
         Arrays.toString(computers);
 
-        Random random=new Random();
+        Random random = new Random();
         for (Computer computer :
                 computers) {
             computer.setSerialNumber(random.nextInt(RANGE));
@@ -27,7 +27,7 @@ public class EntryPoint {
         for (Computer computer :
                 computers) {
             float currentPrice = computer.getPrice();
-            computer.setPrice(currentPrice*1.1f);
+            computer.setPrice(currentPrice * 1.1f);
         }
 
         for (Computer computer :

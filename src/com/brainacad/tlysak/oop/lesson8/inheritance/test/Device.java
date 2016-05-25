@@ -1,4 +1,4 @@
-package com.brainacad.tlysak.oop.lesson8.inheritance;
+package com.brainacad.tlysak.oop.lesson8.inheritance.test;
 
 public class Device {
     private static long nextSerialNumber = 0;
@@ -6,7 +6,7 @@ public class Device {
     private double price;
     private long serialNumber;
     private String manufacturer;
-    
+
     public static long getSerialNumberForNewDevice() {
         return nextSerialNumber++;
     }
@@ -35,4 +35,8 @@ public class Device {
         this.price = price;
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }

@@ -17,10 +17,10 @@ public class Main {
 
     Circle circle = new Circle();
         System.out.println(circle.toString());
-    Rectangle rectangle = new Rectangle();
-        System.out.println(rectangle.toString());
-    Triangle triangle = new Triangle();
-        System.out.println(triangle.calcArea());
+//    Rectangle rectangle = new Rectangle();
+//        System.out.println(rectangle.toString());
+//    Triangle triangle = new Triangle();
+//        System.out.println(triangle.calcArea());
 
     }
 

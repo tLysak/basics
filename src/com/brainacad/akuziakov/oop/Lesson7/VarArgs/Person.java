@@ -15,19 +15,19 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public Person initPerson(final String firstName, final String lastName){
-        this.firstName=firstName;
-        this.lastName=lastName;
+    public Person initPerson(final String firstName, final String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         return this;
     }
 
-    public Person initPerson(final int age, final long salary){
-        this.age=age;
-        this.salary=salary;
+    public Person initPerson(final int age, final long salary) {
+        this.age = age;
+        this.salary = salary;
         return this;
     }
 
-    public Person initPerson(final String lastName, final int age){
+    public Person initPerson(final String lastName, final int age) {
         initPerson(null, lastName);
         initPerson(age, 0L);
 //        this.lastName=lastName;

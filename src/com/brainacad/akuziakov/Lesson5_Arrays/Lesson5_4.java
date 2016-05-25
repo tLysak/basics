@@ -7,9 +7,9 @@ import java.util.Arrays;
 public class Lesson5_4 {
     public static void main(String[] args) {
 
-        final int[]  arrayForBinarySearch = {3, 2, 14, 6, 11, 32, 1, 4};
+        final int[] arrayForBinarySearch = {3, 2, 14, 6, 11, 32, 1, 4};
 
-        final int searchValue=11;
+        final int searchValue = 11;
 
         Arrays.sort(arrayForBinarySearch);
 
@@ -21,9 +21,9 @@ public class Lesson5_4 {
 //        }
     }
 
-    private static int MyBinarySearch(int[] arr, int seachVal){
-        int middle=arr.length/2;
-        if (arr[middle]==seachVal){
+    private static int MyBinarySearch(int[] arr, int seachVal) {
+        int middle = arr.length / 2;
+        if (arr[middle] == seachVal) {
             return middle;
         }
 //        else if(arr[middle]<seachVal){

@@ -2,10 +2,13 @@ package com.brainacad.vmarch.lesson6.mymath;
 
 import java.util.Arrays;
 
-public class Calculation {
+public class MinMaxOfTwoArrays {
     public static void main(String[] args) {
 
-        int array1[] = new int[]{2, 6, 4, 3};
+        int array1[] = {2, 6, 4, 3};
+        int array2[] = {3, 6, 4, 5, 6, 7};
+
+
         Arrays.sort(array1);
 
         int maxValue1 = MyMath.findMax(array1);
@@ -13,7 +16,6 @@ public class Calculation {
         System.out.println("Min1: " + minValue1 + ", Max1: " + maxValue1);
 
 
-        int array2[] = {3, 6, 4, 5, 6, 7};
         Arrays.sort(array2);
 
         int maxValue2 = MyMath.findMax(array2);

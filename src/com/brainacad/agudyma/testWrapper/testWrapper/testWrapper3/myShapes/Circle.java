@@ -35,6 +35,7 @@ public class Circle extends Shape {
         this.color = color;
         return color;
     }
+
     public double getRadius() {
 
         return radius;
@@ -45,14 +46,8 @@ public class Circle extends Shape {
         return shapeName;
     }
 
-    public void setShapeName(String shapeName) {
-        this.shapeName = shapeName;
-    }
 
-    public void setRadius(double radius) {
 
-        this.radius = radius;
-    }
 
     public String getColor() {
         return color;

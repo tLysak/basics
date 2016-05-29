@@ -15,11 +15,7 @@ public class Circle extends Shape {
         this.color = color;
 
     }
-//    @Override
-//    public String getShapeName(){
-//
-//        return super.getShapeName();
-//    }
+
     @Override
     public String toString() {
 

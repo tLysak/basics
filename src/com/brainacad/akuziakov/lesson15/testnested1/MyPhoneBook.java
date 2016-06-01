@@ -1,19 +1,19 @@
 package com.brainacad.akuziakov.lesson15.testnested1;
 
-import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MyPhoneBook {
 
-    private PhoneNumber[] phoneNumbers = new PhoneNumber[10];
+    public static final int PNONEBOOK_SIZE = 10;
+    private PhoneNumber[] phoneNumbers = new PhoneNumber[PNONEBOOK_SIZE];
     private int numbersCount;
 
     public MyPhoneBook() {
         numbersCount = 0;
     }
 
-    public void addPhoneNumber(final String name, final String phone) {
+    public void addPhoneNumber(final String name, final String phone) throws Exception {
         if (canAddPhoneNumber(name, phone)) {
             phoneNumbers[numbersCount] = new PhoneNumber(name, phone);
             numbersCount++;
@@ -26,19 +26,21 @@ public class MyPhoneBook {
         }
     }
 
-    private boolean canAddPhoneNumber(String name, String phone) {
-        return validateName(name) && validatePhone(phone) && !isFull(phoneNumbers, numbersCount);
+    private boolean canAddPhoneNumber(String name, String phone) throws Exception {
+        boolean isValidPhoneNumber = validateName(name) && validatePhone(phone) && !isFull(phoneNumbers, numbersCount);
+        if (!isValidPhoneNumber) {
+            throw new Exception("Can't add phone number.");
+        }
+        return isValidPhoneNumber;
     }
 
-    private boolean validatePhone(String phone) {
+    private boolean validatePhone(final String phone) {
         if (isValidString(phone)) {
-            phone.trim();
-            phone.replace(" ", "");
-            phone.replace("-","");
-            Pattern pattern = Pattern.compile("^+?[1-9]{1}[0-9]{11}");
-            String tmpStr=phone.replace(' ','\0').replace('-','\0');
-            Matcher matcher = pattern.matcher(phone.replace(' ','\0').replace('-','\0'));
-            boolean result= matcher.matches();
+            String tmpPhone;
+            tmpPhone = phone.replaceAll(" |-", "");
+            Pattern pattern = Pattern.compile("^\\+?[1-9]{1}[0-9]{11}");
+            Matcher matcher = pattern.matcher(tmpPhone);
+            boolean result = matcher.matches();
             return result;
         }
         return false;

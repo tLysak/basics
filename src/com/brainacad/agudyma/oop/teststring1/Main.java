@@ -1,4 +1,4 @@
-package com.brainacad.agudyma.oop.teststring1;
+package com.brainacad.agudyma.oop.testString1;
 
 /**
  * Created by Sidhartha on 22.05.2016.

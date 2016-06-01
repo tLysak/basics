@@ -8,10 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Random rnd=new Random();
+        Random rnd = new Random();
 
-        Triangle triangle=new Triangle(rnd.nextInt(10), rnd.nextInt(10), rnd.nextInt(10));
+        Triangle triangle = new Triangle(rnd.nextInt(10), rnd.nextInt(10), rnd.nextInt(10));
 
-        System.out.println("Triangle square is: "+triangle.getSquare());
+        System.out.println("Triangle square is: " + triangle.getSquare());
     }
 }

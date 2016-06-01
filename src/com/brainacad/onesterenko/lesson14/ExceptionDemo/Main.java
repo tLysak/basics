@@ -7,10 +7,9 @@ public class Main {
     public static void main(String[] args) {
         Person testPerson = new Person();
         try {
-            testPerson.setAge(-8);
+            testPerson.setAge(155);
         } catch (InvalidException e){
-            e.printStackTrace();
-        }
-
+                    }
+        System.out.println("age is " + testPerson.getAge());
     }
 }

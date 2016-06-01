@@ -6,6 +6,7 @@ package com.brainacad.onesterenko.lesson14.ExceptionDemo;
 public class InvalidException extends RuntimeException{
 
     public InvalidException(){
+        printStackTrace();
         System.out.println("Please set valid age");
     }
 

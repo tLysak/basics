@@ -6,7 +6,11 @@ package com.brainacad.onesterenko.lesson14.ExceptionDemo;
 public class Person {
     public void setAge(int age) throws InvalidException {
         this.age = age;
-        if (age <0) throw new InvalidException();
+        if (age <1 ||age >120) throw new InvalidException();
+    }
+
+    public int getAge() {
+        return age;
     }
 
     private int age;

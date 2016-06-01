@@ -1,6 +1,8 @@
 package com.brainacad.akuziakov.lesson15.testnested1;
 
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MyPhoneBook {
 
@@ -25,14 +27,32 @@ public class MyPhoneBook {
     }
 
     private boolean canAddPhoneNumber(String name, String phone) {
-        return isValid(name) && isValid(phone) && !isFull(phoneNumbers, numbersCount);
+        return validateName(name) && validatePhone(phone) && !isFull(phoneNumbers, numbersCount);
+    }
+
+    private boolean validatePhone(String phone) {
+        if (isValidString(phone)) {
+            phone.trim();
+            phone.replace(" ", "");
+            phone.replace("-","");
+            Pattern pattern = Pattern.compile("^+?[1-9]{1}[0-9]{11}");
+            String tmpStr=phone.replace(' ','\0').replace('-','\0');
+            Matcher matcher = pattern.matcher(phone.replace(' ','\0').replace('-','\0'));
+            boolean result= matcher.matches();
+            return result;
+        }
+        return false;
+    }
+
+    private boolean validateName(String name) {
+        return isValidString(name);
     }
 
     private boolean isFull(final PhoneNumber[] phoneNumbers, final int numbersCount) {
         return phoneNumbers.length < numbersCount;
     }
 
-    private boolean isValid(String name) {
+    private boolean isValidString(String name) {
         return (!name.isEmpty() && null != name);
     }
 

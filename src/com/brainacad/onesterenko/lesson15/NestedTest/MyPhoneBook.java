@@ -22,26 +22,34 @@ package com.brainacad.onesterenko.lesson15.NestedTest;
  */
 public class MyPhoneBook {
     private PhoneNumber phoneNumbers [] = new PhoneNumber[10];
-    String book;
-
+    String b;
+    public int counter =0;
     public PhoneNumber addPhoneNumber (String name, String phone) {
 
-         PhoneNumber  pn = new PhoneNumber();
-         int counter =0;
+         PhoneNumber  pn = new PhoneNumber(name,phone);
+
         for (int i=counter; i<phoneNumbers.length; i++)
         phoneNumbers[counter] = pn;
         counter++;
         return pn;
     }
 
-    public String printPhoneBook(){
-        for (int i = 0; i < 10; i++) {
-             book = phoneNumbers[i].toString();
+    public  String printPhoneBook(){
+        for (int i = 0; i < phoneNumbers.length; i++) {
+           if (phoneNumbers[i] !=null){
+
+            b = phoneNumbers[i].toString();
+            System.out.println(b);}
         }
-        return book;
+        return b;
     }
 
-    class PhoneNumber {
+    static class PhoneNumber {
+        public PhoneNumber(String name, String phone) {
+            this.name = name;
+            this.phone = phone;
+        }
+
         public String getPhone() {
             return phone;
         }
@@ -63,7 +71,7 @@ public class MyPhoneBook {
 
         @Override
         public String toString (){
-         return (this.name + " " + this.phone );
+         return ("Contact name - " + this.name + " Phone number - " + this.phone );
         }
     }
 

@@ -6,7 +6,7 @@ package com.brainacad.onesterenko.lesson14;
 public class MyException extends Throwable {
 
     public static void MyException() throws Exception {
-        throw new Exception("Some shit");
+        throw new Exception("Some ");
 
 
     }

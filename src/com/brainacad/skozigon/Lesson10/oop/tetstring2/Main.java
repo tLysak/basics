@@ -44,11 +44,12 @@ public class Main {
 
         StringBuilder sb2 = new StringBuilder();
         for (char ch : myString1) {
-            int result = myStr2.indexOf(ch);
-            if (result >=0) {
+            int k = myStr2.indexOf(ch);
+            if (k >=0) {
                 sb2.append(ch);
             }
         }
         System.out.println(sb2);
+
     }
 }

@@ -31,7 +31,7 @@ public class MyPhoneBook {
         if (!isValidPhoneNumber) {
             throw new Exception("Can't add phone number.");
         }
-        return isValidPhoneNumber;
+        return true;
     }
 
     private boolean validatePhone(final String phone) {
@@ -40,8 +40,7 @@ public class MyPhoneBook {
             tmpPhone = phone.replaceAll(" |-", "");
             Pattern pattern = Pattern.compile("^\\+?[1-9]{1}[0-9]{11}");
             Matcher matcher = pattern.matcher(tmpPhone);
-            boolean result = matcher.matches();
-            return result;
+            return matcher.matches();
         }
         return false;
     }
@@ -55,7 +54,7 @@ public class MyPhoneBook {
     }
 
     private boolean isValidString(String name) {
-        return (!name.isEmpty() && null != name);
+        return (null != name && !name.isEmpty());
     }
 
     public static class PhoneNumber {

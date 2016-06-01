@@ -6,6 +6,7 @@ package com.brainacad.skozigon.Labs.labs2_12.testnest1;
 public class TestNested1 {
     public static void main(String[] args) {
 
+
         MyPhoneBook myPhoneBook = new MyPhoneBook();
         myPhoneBook.addPhoneNumber("Vasya", "0671235874");
         myPhoneBook.addPhoneNumber("Petya", "0502138547");

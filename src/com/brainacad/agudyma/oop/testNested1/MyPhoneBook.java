@@ -6,18 +6,24 @@ import java.util.Arrays;
  * Created by User on 01.06.2016.
  */
 public class MyPhoneBook {
-    int n = 10;
-    private PhoneNumber [] phoneNumbers  = new   PhoneNumber[n];
 
-    public void addPhoneNumber(String name, String phone) {
-        for (n=0;n<phoneNumbers.length;n++){
-            PhoneNumber contact = new PhoneNumber(name,phone);
-            phoneNumbers [n] = contact;
+    private PhoneNumber [] phoneNumbers  = new   PhoneNumber[10];
 
-        }
+    public PhoneNumber addPhoneNumber(String name, String phone) {
+        PhoneNumber contact = new PhoneNumber(name,phone);
+        for (int i=0;i<phoneNumbers.length;i++)
+
+            phoneNumbers[i] = contact;
+
+        return contact;
 
 
     }
+    public String printPhoneBook(){
+
+        return phoneNumbers.toString() ;
+    }
+
 
     public static class PhoneNumber{
         String name;
@@ -28,11 +34,26 @@ public class MyPhoneBook {
             this.phone = phone;
             }
 
+        public String getPhone() {
+            return phone;
+        }
 
+        public void setPhone(String phone) {
+            this.phone = phone;
+        }
 
-           @Override
+        public String getName() {
+
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        @Override
         public String toString() {
-            return "name: " +name + " phone: " + phone;
+            return "name: " +getName() + " phone: " + getPhone() ;
         }
     }
 

@@ -21,7 +21,7 @@ public class MyPhoneBook {
     }
     public String printPhoneBook(){
 
-        return phoneNumbers.toString() ;
+        return Arrays.toString(phoneNumbers) ;
     }
 
 

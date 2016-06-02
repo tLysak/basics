@@ -15,5 +15,6 @@ public class Main {
         phoneBook.addPhoneNumber("Vova3","067987654");
 
         phoneBook.printPhoneBook();
+        System.out.println(phoneBook.printPhoneBook());
     }
 }

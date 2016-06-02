@@ -7,7 +7,5 @@ public class MyException extends Throwable {
 
     public static void MyException() throws Exception {
         throw new Exception("Some shit");
-
-
     }
 }

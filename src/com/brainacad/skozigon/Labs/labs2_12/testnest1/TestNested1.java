@@ -8,7 +8,7 @@ public class TestNested1 {
 
 
         MyPhone myPhone = new MyPhone();
-        myPhone.switchOn();
+
 
 
 //        myPhoneBook.addPhoneNumber("Vasya", "0671235874");

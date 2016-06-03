@@ -1,8 +1,5 @@
 package com.brainacad.vmarch.primitives;
 
-/**
- * Created by User on 23.04.16.
- */
 public class Lesson3_3 {
     public static void main(String[] args) {
         boolean a = true;

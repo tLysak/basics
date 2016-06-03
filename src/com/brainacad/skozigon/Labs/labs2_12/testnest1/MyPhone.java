@@ -9,11 +9,17 @@ import java.util.Scanner;
  */
 public class MyPhone {
 
+
     public MyPhone() {
+
+        this.switchOn();
+//        call(MyPhoneBook.this.phoneNumbers[1]);
+
 
     }
 
-    public void switchOn(){
+    public void switchOn() {
+
         System.out.println("Loading PhoneBook records…");
         MyPhoneBook myPhoneBook = new MyPhoneBook();
 
@@ -25,10 +31,16 @@ public class MyPhone {
 
         myPhoneBook.printPhoneBook();
         System.out.println("Ok!");
-    }
-    public void callIn(int i){
 
-        System.out.println("Calling to: " );
+
+    }
+
+    public void call(int i) {
+
+        System.out.println("Calling to: " + i);
+
+
+
         // тут має бути щось тіпа:
 //        System.out.println(myPhoneBook[i]);
 
@@ -38,17 +50,17 @@ public class MyPhone {
         int i = 0;
         MyPhoneBook.PhoneNumber[] phoneNumbers = new MyPhoneBook.PhoneNumber[10];
 
-        public void printPhoneBook(){
-            for (MyPhoneBook.PhoneNumber pn: phoneNumbers) {
-                if (pn!=null)
+        public void printPhoneBook() {
+            for (MyPhoneBook.PhoneNumber pn : phoneNumbers) {
+                if (pn != null)
                     System.out.println(pn);
             }
             return;
         }
 
 
-        public void addPhoneNumber(String name, String phone){
-            if(i<=phoneNumbers.length-1) {
+        public void addPhoneNumber(String name, String phone) {
+            if (i <= phoneNumbers.length - 1) {
                 phoneNumbers[i] = new MyPhoneBook.PhoneNumber(name, phone);
                 i++;
             }

@@ -7,26 +7,24 @@ public class TestNested1 {
     public static void main(String[] args) {
 
 
-        MyPhoneBook myPhoneBook = new MyPhoneBook();
-        myPhoneBook.addPhoneNumber("Vasya", "0671235874");
-        myPhoneBook.addPhoneNumber("Petya", "0502138547");
-        myPhoneBook.addPhoneNumber("Sasha", "0998743258");
-        myPhoneBook.addPhoneNumber("Oleg", "0672458963");
-        myPhoneBook.addPhoneNumber("Opanas", "0508742365");
+        MyPhone myPhone = new MyPhone();
+        myPhone.switchOn();
 
 
-        System.out.println("Sort by name");
-        myPhoneBook.sortByName();
-        myPhoneBook.printPhoneBook();
-
-        System.out.println("Sort by phone:");
-        myPhoneBook.sortByNumber();
-        myPhoneBook.printPhoneBook();
+//        myPhoneBook.addPhoneNumber("Vasya", "0671235874");
+//        myPhoneBook.addPhoneNumber("Petya", "0502138547");
+//        myPhoneBook.addPhoneNumber("Sasha", "0998743258");
+//        myPhoneBook.addPhoneNumber("Oleg", "0672458963");
+//        myPhoneBook.addPhoneNumber("Opanas", "0508742365");
 
 
-
-
-
+//        System.out.println("Sort by name");
+//        myPhoneBook.sortByName();
+//        myPhoneBook.printPhoneBook();
+//
+//        System.out.println("Sort by phone:");
+//        myPhoneBook.sortByNumber();
+//        myPhoneBook.printPhoneBook();
 
     }
 }

@@ -1,5 +1,7 @@
 package com.brainacad.akuziakov.lesson15.testnested1;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,6 +26,30 @@ public class MyPhoneBook {
         for (int i = 0; i < numbersCount; i++) {
             System.out.println(phoneNumbers[i]);
         }
+    }
+
+    public void sortByName(){
+        Arrays.sort(phoneNumbers, new Comparator<PhoneNumber>() {
+            @Override
+            public int compare(PhoneNumber o1, PhoneNumber o2) {
+                if (null!=o1&&null!=o2) {
+                    return o1.getName().compareToIgnoreCase(o2.getName());
+                }
+                return 0;
+            }
+        });
+    }
+
+    public void sortByPhoneNumber(){
+        Arrays.sort(phoneNumbers, new Comparator<PhoneNumber>() {
+            @Override
+            public int compare(PhoneNumber o1, PhoneNumber o2) {
+                if (null!=o1&&null!=o2) {
+                    return o1.getPhone().compareToIgnoreCase(o2.getPhone());
+                }
+                return 0;
+            }
+        });
     }
 
     private boolean canAddPhoneNumber(String name, String phone) throws Exception {

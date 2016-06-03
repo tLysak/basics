@@ -6,7 +6,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MyPhone {
-
     public class MyPhoneBook {
 
         public static final int PHONEBOOK_SIZE = 10;

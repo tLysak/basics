@@ -6,22 +6,25 @@ import java.util.Arrays;
  * Created by User on 01.06.2016.
  */
 public class MyPhoneBook {
+    private int i = 10;
+    private PhoneNumber [] phoneNumbers  = new   PhoneNumber[i];
 
-    private PhoneNumber [] phoneNumbers  = new   PhoneNumber[10];
+    public void addPhoneNumber(String name, String phone) {
 
-    public PhoneNumber addPhoneNumber(String name, String phone) {
-        PhoneNumber contact = new PhoneNumber(name,phone);
-        for (int i=0;i<phoneNumbers.length;i++)
+        PhoneNumber contact = new PhoneNumber(name, phone);
 
-            phoneNumbers[i] = contact;
+        System.out.println(contact);
+        }
+//works if public int i =1;
+//        for (int i = 0; i < phoneNumbers.length; i++) {
+//            phoneNumbers[i++] = contact;
+//            System.out.println(contact);
+//
+//        }
 
-        return contact;
+    public void printPhoneBook(){
 
-
-    }
-    public String printPhoneBook(){
-
-        return Arrays.toString(phoneNumbers) ;
+//        return Arrays.toString(phoneNumbers) ;
     }
 
 

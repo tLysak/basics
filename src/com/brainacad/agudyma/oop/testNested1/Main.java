@@ -13,8 +13,13 @@ public class Main {
         phoneBook.addPhoneNumber("Vova1","067987654" );
         phoneBook.addPhoneNumber("Vova2","067987654");
         phoneBook.addPhoneNumber("Vova3","067987654");
+        phoneBook.addPhoneNumber("Sasha","050123456");
+        phoneBook.addPhoneNumber("Vova","067987654");
+        phoneBook.addPhoneNumber("Vova1","067987654" );
+        phoneBook.addPhoneNumber("Vova2","067987654");
+        phoneBook.addPhoneNumber("Vova3","067987654");
 
         phoneBook.printPhoneBook();
-        System.out.println(phoneBook.printPhoneBook());
+
     }
 }

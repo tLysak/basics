@@ -40,5 +40,6 @@ public class MyTuple<A, B, C> {
     @Override
     public String toString() {
         return "A: " + getA() + ", B: " + getB() + ", C: " + getC();
+
     }
 }

@@ -10,6 +10,5 @@ public class MainMyTuple {
 
         System.out.println(myTuple1.toString());
         System.out.println(myTuple2.toString());
-
     }
 }

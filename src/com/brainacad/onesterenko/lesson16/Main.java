@@ -1,6 +1,6 @@
 package com.brainacad.onesterenko.lesson16;
 
-import java.time.DayOfWeek;
+import java.util.Scanner;
 
 import static com.brainacad.onesterenko.lesson16.EnumTest.*;
 import static com.brainacad.onesterenko.lesson16.EnumTest.MyDayOfWeek.*;
@@ -20,23 +20,33 @@ import static com.brainacad.onesterenko.lesson16.EnumTest.MyDayOfWeek.*;
 public class Main {
     public static void main(String[] args) {
 
-  for (  DayOfWeek day : DayOfWeek.values()    ) {
-          DayOfWeek thisDay = DayOfWeek.valueOf(String.valueOf(day));
-        switch(thisDay){
-            case MONDAY:
-                System.out.println("My Java day:"+ MONDAY);
-                break;
-              case WEDNESDAY:
-                System.out.println("My Java day:" + WEDNESDAY);
-                  break;
-              case FRIDAY:
-                System.out.println("My Java day:"+ FRIDAY);
-                  break;
 
-           }
+//  for (  MyDayOfWeek day : MyDayOfWeek.values()    ) {
+//      MyDayOfWeek thisDay = MyDayOfWeek.valueOf(String.valueOf(day));
+//        switch(thisDay){
+//            case MONDAY:
+//                System.out.println("My Java day:"+ MONDAY);
+//                break;
+//              case WEDNESDAY:
+//                System.out.println("My Java day:" + WEDNESDAY);
+//                  break;
+//              case FRIDAY:
+//                System.out.println("My Java day:"+ FRIDAY);
+//                  break;
+//
+//           }
 
-        }
-   //     System.out.println(MyDayOfWeek.);
-        }
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("input current day");
+        String inputDay = scan.nextLine();
+        inputDay.toUpperCase();
+        MyDayOfWeek day = MyDayOfWeek.valueOf(String.valueOf(inputDay));
+        day.nextDay(day);
+
+        //     int ord = MyDayOfWeek.valueOf(String.valueOf(inputDay).toUpperCase()).ordinal() + 1;
+
+        System.out.println(day);
     }
+}
+

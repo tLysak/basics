@@ -8,14 +8,11 @@ import java.util.Scanner;
  * Created by skozigon on 01.06.2016.
  */
 public class MyPhone {
+    private MyPhoneBook addressBook;
 
 
     public MyPhone() {
-
         this.switchOn();
-//        call(MyPhoneBook.this.phoneNumbers[1]);
-
-
     }
 
     public void switchOn() {
@@ -32,23 +29,20 @@ public class MyPhone {
         myPhoneBook.printPhoneBook();
         System.out.println("Ok!");
 
+        addressBook = myPhoneBook;
 
     }
 
     public void call(int i) {
 
         System.out.println("Calling to: " + i);
-
-
-
-        // тут має бути щось тіпа:
-//        System.out.println(myPhoneBook[i]);
+        System.out.println(addressBook.getNumberById(i));
 
     }
 
     class MyPhoneBook {
         int i = 0;
-        MyPhoneBook.PhoneNumber[] phoneNumbers = new MyPhoneBook.PhoneNumber[10];
+        private PhoneNumber[] phoneNumbers = new PhoneNumber[10];
 
         public void printPhoneBook() {
             for (MyPhoneBook.PhoneNumber pn : phoneNumbers) {
@@ -56,6 +50,10 @@ public class MyPhone {
                     System.out.println(pn);
             }
             return;
+        }
+
+        public PhoneNumber getNumberById(int i){
+            return phoneNumbers[i];
         }
 
 

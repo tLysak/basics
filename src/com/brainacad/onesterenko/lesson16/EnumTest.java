@@ -1,5 +1,7 @@
 package com.brainacad.onesterenko.lesson16;
 
+import java.util.Scanner;
+
 /**
  * Rewrite MyDayOfWeek enum, add method nextDay() which return the next day of week on for given enum
  * value.
@@ -16,21 +18,44 @@ public class EnumTest {
             FRIDAY(5),
             SATURDAY(6);
 
+
             public int getOrder() {
                 return order;
             }
 
             public int order;
-           private MyDayOfWeek(int order) {
-               this.order = order;
+
+            private MyDayOfWeek(int order) {
+                this.order = order;
             }
-//             MyDayOfWeek nextDay (MyDayOfWeek day){
-//                int ordr=  day.ordinal() +1;
-//                 MyDayOfWeek nextDay =  MyDayOfWeek(ordr);
-//                 return nextDay ;
-//            }
-        }
-    }
+
+            MyDayOfWeek nextDay(MyDayOfWeek day) {
+
+
+                switch (day) {
+                    case SUNDAY:
+                        return MONDAY;
+                      //  break;
+                    case MONDAY:
+                        return TUESDAY;
+                //    break;
+                    case TUESDAY:
+                        return WEDNESDAY;
+               //     break;
+                    case WEDNESDAY:
+                        return THURSDAY;
+                //    break;
+                    case THURSDAY:
+                        return FRIDAY;
+                //    break;
+                    case FRIDAY:
+                        return SATURDAY;
+               //      break;
+
+                }
+                return null;
+            }
+        } }
 
 
 

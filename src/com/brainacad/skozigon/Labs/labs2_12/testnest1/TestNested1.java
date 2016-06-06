@@ -9,6 +9,8 @@ public class TestNested1 {
 
         MyPhone myPhone = new MyPhone();
 
+        myPhone.call(2);
+
 
 
 //        myPhoneBook.addPhoneNumber("Vasya", "0671235874");

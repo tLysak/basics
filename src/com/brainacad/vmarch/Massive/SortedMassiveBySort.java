@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Massive;
+package com.brainacad.vmarch.massive;
 
 import java.util.Arrays;
 

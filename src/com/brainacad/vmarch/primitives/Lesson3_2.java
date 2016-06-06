@@ -1,8 +1,5 @@
 package com.brainacad.vmarch.primitives;
 
-/**
- * Created by Vovas on 23.04.16.
- */
 public class Lesson3_2 {
     public static void main(String[] args) {
         byte a = (byte) 0b11010000;

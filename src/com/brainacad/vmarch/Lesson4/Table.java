@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Lesson4;
+package com.brainacad.vmarch.lesson4;
 
 public class Table {
     public static void main(String[] args) {

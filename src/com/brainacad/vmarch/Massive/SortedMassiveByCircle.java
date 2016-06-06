@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Massive;
+package com.brainacad.vmarch.massive;
 
 public class SortedMassiveByCircle {
     public static void main(String[] args) {

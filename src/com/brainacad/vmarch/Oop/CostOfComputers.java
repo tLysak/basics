@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Oop;
+package com.brainacad.vmarch.oop;
 
 import java.util.Random;
 

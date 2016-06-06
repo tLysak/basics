@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Massive;
+package com.brainacad.vmarch.massive;
 
 public class From2To20 {
     public static void main(String[] args) {

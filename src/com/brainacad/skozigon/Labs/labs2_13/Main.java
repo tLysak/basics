@@ -16,7 +16,7 @@ enum MyDayOfWeek {
 
     public String nextDay(String string) {
         MyDayOfWeek[] d = MyDayOfWeek.values();
-        MyDayOfWeek code = MyDayOfWeek.valueOf(string);
+        MyDayOfWeek code = this;
         int i = code.ordinal();
             i++;
         return d[i].toString();

@@ -9,8 +9,6 @@
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/akuziakov" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/dzemlianiy" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/lpyavka" />
-      <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/sKozigon" />
-      <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/tlysak" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/tlysak/oop" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/vmarch" />
     </content>

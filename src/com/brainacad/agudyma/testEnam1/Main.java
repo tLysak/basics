@@ -1,51 +1,67 @@
 package com.brainacad.agudyma.testEnam1;
 
-import java.util.Arrays;
-
 /**
  * Created by User on 03.06.2016.
  */
 public class Main {
     public int i;
-    public int dayNumber;
-    public enum MyDayOfWeek{
-        SUNDAY, MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY;
+
+    public enum MyDayOfWeek {
+        SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
     }
+
     private static String nextDay() {
 
 
-        MyDayOfWeek[] daysOfWeek = MyDayOfWeek.values();
-
-        String nextDay = null;
-        for (int i = 0; i <= 6; i++) {
-            if (i == 6 ){
-                nextDay= String.valueOf(0);
+        for (MyDayOfWeek day : MyDayOfWeek.values()) {
+//            System.out.println(day);
+            switch (day) {
+                case SUNDAY:
+                    System.out.println(MyDayOfWeek.MONDAY);
+                    break;
+                case MONDAY:
+                    System.out.println(MyDayOfWeek.TUESDAY);
+                    break;
+                case TUESDAY:
+                    System.out.println(MyDayOfWeek.WEDNESDAY);
+                    break;
+                case WEDNESDAY:
+                    System.out.println(MyDayOfWeek.THURSDAY);
+                    break;
+                case THURSDAY:
+                    System.out.println(MyDayOfWeek.FRIDAY);
+                    break;
+                case FRIDAY:
+                    System.out.println(MyDayOfWeek.SATURDAY);
+                    break;
+                case SATURDAY:
+                    System.out.println(MyDayOfWeek.SUNDAY);
+                    break;
             }
-            else nextDay = String.valueOf(daysOfWeek[i+1]);
-
         }
-
-
-        return nextDay;
+        return " ";
     }
+//
+//        MyDayOfWeek[] daysOfWeek = MyDayOfWeek.values();
+//
+//        for (int dayNumber  = 0 ; dayNumber < 6; dayNumber++) {
+//            MyDayOfWeek nextDay1 = daysOfWeek[dayNumber+1];
+////
+//            System.out.println(nextDay1);
+//        }
+//             return MyDayOfWeek.SUNDAY;
+//
+//
+//    }
+
 
     public static void main(String[] args) {
 
         System.out.println(nextDay());
-//        for (MyDayOfWeek day : MyDayOfWeek.values()){
-////            System.out.println(day);
-//                switch (day) {
-//                    case SUNDAY:
-//                    System.out.println("Sunday");
-//                        break;
-//                    case MONDAY:
-//                        System.out.println("Monday");
-//                        break;
-//                    case TUESDAY:
-//                        System.out.println("Tuesday");
 
-                }
-        }
+
+    }
+}
 
 
 

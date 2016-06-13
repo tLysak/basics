@@ -5,17 +5,21 @@ import java.time.DayOfWeek;
 public class Main {
 
     enum MyDayOfWeek {
-        SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+         MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
         private MyDayOfWeek nextDay;
 
-        public MyDayOfWeek nextDay() {
+        static DayOfWeek[] days = new DayOfWeek[MyDayOfWeek.values().length];
 
+        public MyDayOfWeek nextDay() {
+            //days[this    ]
             for (int i = 0; i < MyDayOfWeek.values().length; i++) {
                 if (this.name() == MyDayOfWeek.values()[i].name()) {
+
                     nextDay =
                             (MyDayOfWeek.values().length - 1 == i) ?
                                     MyDayOfWeek.valueOf(MyDayOfWeek.values()[0].name()) :
                                     MyDayOfWeek.valueOf(MyDayOfWeek.values()[i + 1].name());
+                    break;
                 }
             }
             return nextDay;

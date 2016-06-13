@@ -6,7 +6,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/agudyma" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/agudyma/lesson8/inheritance" />
-      <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/akuziakov" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/dzemlianiy" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/lpyavka" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/tlysak/oop" />

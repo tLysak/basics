@@ -8,10 +8,12 @@ public class MyTuple<A, B, C> {
     private C c;
 
     MyTuple(A a, B b, C c) {
+
         this.a = a;
         this.b = b;
         this.c = c;
     }
+
 
     public A getA() {
         return a;
@@ -36,6 +38,7 @@ public class MyTuple<A, B, C> {
     public void setC(C c) {
         this.c = c;
     }
+
 
     @Override
     public String toString() {

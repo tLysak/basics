@@ -1,6 +1,7 @@
 package com.brainacad.vmarch.lesson18.testgenerics1;
 
 
+
 public class MainMyTuple {
 
     public static void main(String[] args) {
@@ -9,6 +10,7 @@ public class MainMyTuple {
         MyTuple<Double, String, String> myTuple2 = new MyTuple<>(90.9, "gRE", "ooP");
 
         System.out.println(myTuple1.toString());
+
         System.out.println(myTuple2.toString());
     }
 }

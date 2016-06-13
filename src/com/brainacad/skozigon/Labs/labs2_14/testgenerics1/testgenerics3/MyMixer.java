@@ -14,14 +14,14 @@ public class MyMixer<T> {
 
 
 
-    public T shuffle(T[] arr){
+    public T[] shuffle(){
         Random rnd = new Random();
-        for (int i = 0; i <arr.length ; i++) {
-            int j = rnd.nextInt(i);
-            T temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
+        for (int i = 0; i <array.length ; i++) {
+            int j = rnd.nextInt(array.length);
+            T temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
         }
-        return (T) arr;
+        return  array;
     }
 }

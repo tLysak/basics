@@ -17,21 +17,11 @@ public class MyTestMethod  {
         return i;
     }
 
-    public static <T extends Number & Comparable > Double calckSum(Double[] mass, T el){
-        Double sum = Double.valueOf(0);
-        for (Double t: mass) {
-            if (t.compareTo((Double) el)> 0) {
-                sum = sum+t;
-            }
-        }
-        return sum;
-    }
-
-    public static <T extends Number & Comparable > Integer calckSum(Integer[] mass, T el){
-        Integer sum = Integer.valueOf(0);
-        for (Integer t: mass) {
-            if (t.compareTo((Integer) el)> 0) {
-                sum = sum+t;
+    public static <T extends Number > Double calckSum(T[] mass, T el){
+        double sum = 0;
+        for (Number t: mass) {
+            if (t.doubleValue() >  el.doubleValue()) {
+                sum += t.doubleValue();
             }
         }
         return sum;

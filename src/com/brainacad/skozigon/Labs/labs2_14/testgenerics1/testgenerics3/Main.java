@@ -11,6 +11,8 @@ public class Main {
         String[] mas2 = {"one","two", "three"};
         MyMixer  int_mass = new MyMixer(mas1);
         MyMixer string_mass = new MyMixer(mas2);
+        System.out.println(Arrays.toString(int_mass.shuffle()));
+        System.out.println(Arrays.toString(string_mass.shuffle()));
 
 //
 

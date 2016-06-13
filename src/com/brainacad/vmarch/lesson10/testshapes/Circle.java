@@ -7,8 +7,8 @@ public class Circle extends Shape {
     private String color;
 
     Circle(String color, double radius) {
-        super.shapeColor = color;
         super.shapeName = "Circle";
+        super.shapeColor = color;
         this.radius = radius;
 
     }

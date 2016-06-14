@@ -16,8 +16,9 @@ public class MyTestMethod<T extends Comparable> {
         T sum= (T) Integer.valueOf(0);
         for (T elem :array) {
             if (elem.compareTo(maxelm) > 0){
-                //sum+=
+                //wsum+=
             }
         }
+        return null;
     }
 }

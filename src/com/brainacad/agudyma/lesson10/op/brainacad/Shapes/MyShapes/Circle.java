@@ -1,5 +1,7 @@
 package com.brainacad.agudyma.lesson10.op.brainacad.Shapes.MyShapes;
 
+import com.brainacad.agudyma.lesson10.op.brainacad.shapes.myShapes.Shape;
+
 import static java.lang.Math.PI;
 
 /**

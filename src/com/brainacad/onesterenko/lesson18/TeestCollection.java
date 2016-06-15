@@ -1,8 +1,6 @@
 package com.brainacad.onesterenko.lesson18;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Create new project called  TestCollection2.
@@ -32,6 +30,8 @@ public class TeestCollection  {
             String str = "num_" +rand;
             list.add(str);
                     }
+        System.out.println(list);
+        Collections.sort(list);
         System.out.println(list);
 
     }

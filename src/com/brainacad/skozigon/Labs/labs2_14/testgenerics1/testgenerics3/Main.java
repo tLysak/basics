@@ -14,6 +14,8 @@ public class Main {
         System.out.println(Arrays.toString(int_mass.shuffle()));
         System.out.println(Arrays.toString(string_mass.shuffle()));
 
+
+
 //
 
     }

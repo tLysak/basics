@@ -1,9 +1,6 @@
 package com.brainacad.akuziakov.lesson19.lab_2_15_3.testcollection3;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
@@ -13,16 +10,17 @@ public class Main {
         List<String> linkedList = new LinkedList<>();
 
         for (int i = 0; i <= 10; i++) {
-            arrayList.add(i, String.format("number+%d", i));
-            linkedList.add(i, String.format("number+%d", i));
+            arrayList.add(String.format("number+%d", i));
+            linkedList.add(String.format("number+%d", i));
         }
 
         printList(arrayList);
 
         printList(linkedList);
 
-        for (int i = linkedList.size()-1; i > 0; i--) {
-            arrayList.add(linkedList.get(i));
+        ListIterator<String> listIterator = linkedList.listIterator(linkedList.size());
+        while(listIterator.hasPrevious()) {
+            arrayList.add(listIterator.previous());
         }
 
         System.out.println("\ncheck\n");
@@ -33,7 +31,8 @@ public class Main {
         Iterator<String> stringIterator = list.iterator();
 
         while (stringIterator.hasNext()) {
-            System.out.println(stringIterator.next());
+            System.out.print(stringIterator.next());
         }
+        System.out.println();
     }
 }

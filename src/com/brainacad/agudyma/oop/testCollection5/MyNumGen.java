@@ -31,7 +31,6 @@ public class MyNumGen {
             list1.add(randomMaxvalue);
         }
 
-//        System.out.println(list1);
         Iterator<Integer> array = list1.iterator();
         while(array.hasNext()) {
             Integer line = array.next();

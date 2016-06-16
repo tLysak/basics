@@ -1,4 +1,4 @@
-package com.brainacad.agudyma.oop.testCollection4;
+package com.brainacad.agudyma.oop.testCollection5;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -13,8 +13,8 @@ public class MyNumGen {
     int maxNumb;
 
     public MyNumGen(int numOfElm, int maxNumb) {
-        this.maxNumb =maxNumb;
-        this.numOfElm=numOfElm;
+        this.maxNumb = maxNumb;
+        this.numOfElm = numOfElm;
     }
 
 
@@ -23,19 +23,21 @@ public class MyNumGen {
         List<Integer> list1 = new ArrayList<>();
 
         for (int i = 0; i < numOfElm;i++ ){
-            Random random = new Random(maxNumb);
-            int randomMaxvalue = random.nextInt();
+            Random random = new Random();
+            int randomMaxvalue = random.nextInt(maxNumb);
+//            System.out.println(randomMaxvalue);
+            randomMaxvalue++;
 
             list1.add(randomMaxvalue);
-
         }
+
 //        System.out.println(list1);
         Iterator<Integer> array = list1.iterator();
         while(array.hasNext()) {
             Integer line = array.next();
-            System.out.print(line+", ");
+//            System.out.print(line+", ");
         }
-//        System.out.println(list1);
+        System.out.println(list1);
     }
 
 }

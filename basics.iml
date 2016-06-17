@@ -5,7 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/agudyma/classes" />
-      <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/agudyma/lesson10/op/brainacad/shapes" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/agudyma/lesson10/op/brainacad/Shapes" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/agudyma/lesson11/AbstractClasses" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/agudyma/lesson4" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/agudyma/lesson5" />
@@ -17,7 +17,6 @@
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/akuziakov" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/dzemlianiy" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/lpyavka" />
-      <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/sKozigon" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/tlysak" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/tlysak/oop" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/brainacad/vmarch" />

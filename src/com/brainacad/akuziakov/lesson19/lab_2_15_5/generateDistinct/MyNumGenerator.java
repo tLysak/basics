@@ -17,15 +17,15 @@ public class MyNumGenerator {
         List<Integer> tList = new LinkedList<>();
 
         for (int i = 0; i < numOfElem; i++) {
-            tList.add(i, Math.abs(random.nextInt(maxNumb)));
+            tList.add(Math.abs(random.nextInt(maxNumb)));
         }
 
         return tList;
     }
 
-    public Set<Integer> generateDistinct() {
+    public Set generateDistinct() {
 
-        Set<Integer> tList = new HashSet<>();
+        Set set = new HashSet<>();
         int currentElementIndex = 0;
         int valueToInsert;
 
@@ -33,11 +33,10 @@ public class MyNumGenerator {
 
             valueToInsert = Math.abs(random.nextInt(maxNumb));
 
-            if (!tList.contains(valueToInsert)) {
-                tList.add(valueToInsert);
+            if (set.add(valueToInsert)) {
                 currentElementIndex++;
             }
         }
-        return tList;
+        return set;
     }
 }

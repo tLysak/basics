@@ -1,8 +1,6 @@
 package com.brainacad.skozigon.Labs.labs2_15.testmygen;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created by skozigon on 15.06.2016.
@@ -23,6 +21,15 @@ public class MyNumGenerator {
         }
         return list;
 
+    }
+
+    public Set<Integer> generateDistinct(){
+        Set<Integer> set = new HashSet<>(numOfElm);
+        Random random = new Random();
+        while(set.size()!=numOfElm){
+            set.add(random.nextInt(maxNum));
+        }
+        return set;
     }
 
 }

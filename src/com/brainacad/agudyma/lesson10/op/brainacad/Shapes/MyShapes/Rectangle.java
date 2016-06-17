@@ -1,6 +1,8 @@
 package com.brainacad.agudyma.lesson10.op.brainacad.Shapes.MyShapes;
 
 
+import com.brainacad.agudyma.lesson10.op.brainacad.shapes.myShapes.Shape;
+
 /**
  * Created by Sidhartha on 21.05.2016.
  */

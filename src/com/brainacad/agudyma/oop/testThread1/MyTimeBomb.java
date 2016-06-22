@@ -11,6 +11,11 @@ public class MyTimeBomb extends Thread {
 
         for (int i = 10; i>0; i--){
             System.out.println("Seconds left " + (i-1));
+            try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
     }
@@ -23,7 +28,7 @@ public class MyTimeBomb extends Thread {
         System.out.println("Countdown started");
 
         try {
-            sleep(1000);
+            sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

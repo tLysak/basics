@@ -9,19 +9,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<String> list=new LinkedList<String>();
+        List<String> list = new LinkedList<String>();
 
-        Random random=new Random();
+        Random random = new Random();
 
         int index;
-        for (int i=0;i<=10;i++){
-            index=Math.abs(random.nextInt(10));
-            list.add(index, "number_"+i);
+        for (int i = 0; i <= 10; i++) {
+            index = Math.abs(random.nextInt(10));
+            list.add(index, "number_" + i);
         }
 
-        Iterator<String> stringIterator=list.iterator();
+        Iterator<String> stringIterator = list.iterator();
 
-        while (stringIterator.hasNext()){
+        while (stringIterator.hasNext()) {
             System.out.println(stringIterator.next());
         }
     }

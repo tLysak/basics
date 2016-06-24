@@ -1,8 +1,6 @@
 package com.brainacad.vmarch.Lesson7.myinit;
 
-/**
- * Created by User on 04.06.16.
- */
+
 public class MainMyInit {
 
     public static void main(String[] args) {

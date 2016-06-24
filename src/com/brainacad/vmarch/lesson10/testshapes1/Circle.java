@@ -1,7 +1,7 @@
-package com.brainacad.vmarch.lesson10.testshapes;
+package com.brainacad.vmarch.lesson10.testshapes1;
 
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Comparable {
 
     private double radius;
     private String color;
@@ -32,14 +32,21 @@ public class Circle extends Shape {
 
     @Override
     public double calcArea() {
-
-        return Math.PI * (getRadius() * getRadius());
+        return Math.PI * (radius * radius);
     }
 
     @Override
     public String toString() {
-
-        return super.toString() + ". Area: " + calcArea();
+        return super.toString() + ".\n     Radius = " + radius + ".";
     }
 
+    @Override
+    public void draw() {
+        System.out.println(toString() + "\n     Area: " + calcArea());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }

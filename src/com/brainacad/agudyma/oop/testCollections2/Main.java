@@ -3,6 +3,7 @@ package com.brainacad.agudyma.oop.testCollections2;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by User on 13.06.2016.
@@ -11,6 +12,8 @@ public class Main  {
 
     public static void main(String[] args) {
 
+                Random random = new Random();
+        int temp = random.nextInt(10);
 
         List<String> list1 = new ArrayList<>();
         for (int i = 0 ; i < 10; i++             ) {
@@ -18,13 +21,13 @@ public class Main  {
 
         }
         System.out.println(list1);
-        Iterator<String> array = list1.iterator();
-        while(array.hasNext()){
-            String line = array.next();
-
-
-            System.out.println(line);
-        }
+//        Iterator<String> array = list1.iterator();
+//        while(array.hasNext()){
+//            String line = array.next();
+//
+//
+//            System.out.println(line);
+//        }
     }
 }
 

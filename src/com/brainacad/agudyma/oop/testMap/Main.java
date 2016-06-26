@@ -19,7 +19,7 @@ public class Main {
             System.out.println(stringTokenizer.nextElement());
 
         }
-
+// to do words separation
         MyTranslator translator = new MyTranslator();
         translator.setTranslateInput(translateInput);
 

@@ -1,13 +1,5 @@
 package com.brainacad.vmarch.lesson12.TestRegExp;
 
-
-//        begin from Uppercase,
-//        then other chars in Lowercase
-//        and contains only letters.
-//        In main() method declare array of String with next values:
-//        {“VOVA”,”Ivan”,”R2d2”,”ZX”,”Anna”,”12345”,”ToAd”,”TomCat”,” “}
-//        Add code to check each of these values with checkPersonWithRegExp() method and print result to console.
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

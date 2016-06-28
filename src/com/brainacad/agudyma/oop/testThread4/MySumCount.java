@@ -1,12 +1,13 @@
-package com.brainacad.agudyma.oop.testThread3;
+package com.brainacad.agudyma.oop.testThread4;
 
 import java.util.Arrays;
 import java.util.Random;
 
 /**
- * Created by Sidhartha on 24.06.2016.
+ * Created by Sidhartha on 26.06.2016.
  */
-public class MySumCount extends Thread {
+public class MySumCount implements Runnable {
+
 
     private static int sum;
     public int startIndex;
@@ -78,8 +79,8 @@ public class MySumCount extends Thread {
         Random random = new Random(99);
         for (int i = 0; i < arrOfInt.length; i++) {
             arrOfInt[i] = random.nextInt(99);
-                }
-        MySumCount mySumCount = new MySumCount();
+        }
+        com.brainacad.agudyma.oop.testThread3.MySumCount mySumCount = new com.brainacad.agudyma.oop.testThread3.MySumCount();
 
         mySumCount.setStartIndex(0);
         System.out.println(mySumCount.getStartIndex());
@@ -95,7 +96,7 @@ public class MySumCount extends Thread {
 //        mySumCount.sumOfArrayElements();
 
 
-        Thread thr1 = new MySumCount();
+        Thread thr1 = new com.brainacad.agudyma.oop.testThread3.MySumCount();
 
 //        Thread thr2 = new MySumCount();
 
@@ -105,7 +106,8 @@ public class MySumCount extends Thread {
 
 
     }
-}
 
+
+}
 
 

@@ -9,8 +9,9 @@ import java.util.Random;
  * Created by User on 15.06.2016.
  */
 public class MyNumGen {
-    int numOfElm;
-    int maxNumb;
+    private int numOfElm;
+    private int maxNumb;
+    Random random = new Random();
 
     public MyNumGen(int numOfElm, int maxNumb) {
         this.maxNumb = maxNumb;
@@ -23,7 +24,6 @@ public class MyNumGen {
         List<Integer> list1 = new ArrayList<>();
 
         for (int i = 0; i < numOfElm;i++ ){
-            Random random = new Random();
             int randomMaxvalue = random.nextInt(maxNumb);
 //            System.out.println(randomMaxvalue);
             randomMaxvalue++;

@@ -4,6 +4,7 @@ package com.brainacad.vmarch.lesson19.testcollection3;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class TestCollection3 {
 
@@ -50,6 +51,12 @@ public class TestCollection3 {
             System.out.println("new_" + elemBack);
 
         }
+//        ListIterator<String> listIterator = listLinked.listIterator();
+//        while(listIterator.hasPrevious()){
+//            listArray.add(9,///////////
+//
+//
+//        }
     }
 }
 

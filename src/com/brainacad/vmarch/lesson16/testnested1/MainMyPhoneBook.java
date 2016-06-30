@@ -20,6 +20,7 @@ public class MainMyPhoneBook {
 
         myPhoneBook.sortByName();
         System.out.println("Sorted by name: " + myPhoneBook.toString());
+
         myPhoneBook.sortByPhoneNumber();
         System.out.println("Sorted by phone: " + myPhoneBook.toString());
 

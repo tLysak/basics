@@ -33,17 +33,16 @@ public class MyPhoneBook {
             @Override
             public int compare(PhoneNumber o1, PhoneNumber o2) {
                 return o1.getName().compareTo(o2.getName());
-
             }
         });
     }
 
     public void sortByPhoneNumber() {
+
         Arrays.sort(phoneNumbers, new Comparator<PhoneNumber>() {
             @Override
             public int compare(PhoneNumber o1, PhoneNumber o2) {
                 return o1.getPhone().compareTo(o2.getPhone());
-
             }
         });
     }
@@ -67,7 +66,6 @@ public class MyPhoneBook {
         private String getName() {
             return name;
         }
-
         private void setName(String name) {
             this.name = name;
         }
@@ -75,7 +73,6 @@ public class MyPhoneBook {
         private String getPhone() {
             return phone;
         }
-
         private void setPhone(String phone) {
             this.phone = phone;
         }

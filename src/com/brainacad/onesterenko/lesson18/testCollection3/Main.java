@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Create new project called  TestCollection3.
  Add package “com.brainacad.oop.testcollection3”.
- Create a class Main with a main( ) method.
+ Create a class MainWrapper1 with a main( ) method.
  Add to method main() code to create both an ArrayList and a LinkedList (of String parameter type), and fill each
  in loop with string values like: “num_” and number of current iteration (from 0 to 10).
  Print each list using an ordinary Iterator, then insert one list into the other by using a ListIterator, inserting

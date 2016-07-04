@@ -11,7 +11,7 @@ package com.brainacad.onesterenko.lesson20;
  will output to console the numbers  from 10 to 0 and after that prints “Boom!!!” .
  4. Use the static method Thread.sleep()  to pause for one second.
  (Remember, the one-arg version of sleep()  specifies the amount of time of sleep in milliseconds.)
- Create a class Main with a main( ) method.
+ Create a class MainMyPhoneBook with a main( ) method.
  Add to method main() code that declares local variable “bomb1” of MyTimeBomb  type, and create instance of  MyTimeBomb.
  Add code to invoke start() method.
  Execute the program.

@@ -12,16 +12,13 @@ public class MyTestMethod  {
     public static  <T extends Comparable>  int calcNumInt(Integer[] a, int maxeLm) {
 
         Arrays.sort(a);
-        int sum = 0;
-        int counter = 0;
+               int counter = 0;
         for (Integer element:  a  ) {
             if (element.compareTo(maxeLm) > 0){
                 counter++;
-                sum += element;
 
             }
         }
-
         return counter;
         }
 
@@ -40,8 +37,6 @@ public class MyTestMethod  {
         }
         return sum;
     }
-
-
 
     public static  <T extends Comparable>  int calcNumDouble(Double[] a, int maxeLm){
 

@@ -5,7 +5,7 @@ package com.brainacad.onesterenko.lesson22;
  */
 public class SingltonTest {
     public static void main(String[] args) {
-        SingleObject obj = new SingleObject();
+       // SingleObject obj = new SingleObject();
         SingleObject object = SingleObject.getInstance();
         object.showMessage();
 

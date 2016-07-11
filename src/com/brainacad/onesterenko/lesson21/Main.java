@@ -6,9 +6,9 @@ package com.brainacad.onesterenko.lesson21;
 public class Main {
     public static void main(String[] args) {
 
-        Counter cnt = new Counter();
-        Storage storage = new Storage();
-        Printer printer = new Printer();
+      //  Counter cnt = new Counter();
+      //  Storage storage = new Storage();
+       // Printer printer = new Printer();
 
 
     }

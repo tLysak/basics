@@ -9,20 +9,24 @@ import java.util.Scanner;
  class Cat {
     public static void main(String[] args) {
         BufferedReader fileReader = null;
-        Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine();
-        scanner.close();
+      //  Scanner scanner = new Scanner(System.in);
+        //String userInput = scanner.nextLine();
+        //scanner.close();
 
          try {
-             fileReader = new BufferedReader (new FileReader(userInput));
+             fileReader = new BufferedReader (new FileReader("C:\\test\\test.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         try {
-           System.out.println(fileReader.readLine());
-        } catch (IOException e) {
+         while(true){
+             String temp = fileReader.readLine();
+           System.out.println(temp);
+              if (temp == null){return;}
+        }} catch (IOException e) {
             e.printStackTrace();
         }
+
 
 
     }

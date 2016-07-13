@@ -1,7 +1,7 @@
 package com.brainacad.onesterenko.lesson18.testMyGenerator;
 
 /**
- * Create a class Main with a main( ) method.
+ * Create a class MainWrapper1 with a main( ) method.
  Add to method main() code to create instance of MyNumGenerator (for example with 5,64 parameters)
  and print result of invoking generate() method to console.
  Execute the program.

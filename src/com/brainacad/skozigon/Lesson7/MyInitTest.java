@@ -43,7 +43,7 @@ public class MyInitTest {
     }
 
     public static void main(String[] args) {
-        System.out.println("Main metod");
+        System.out.println("MainWrapper1 metod");
         MyInitTest firstObject = new MyInitTest();
         MyInitTest secondObject = new MyInitTest(10,12);
         System.out.println(Arrays.toString(firstObject.array));

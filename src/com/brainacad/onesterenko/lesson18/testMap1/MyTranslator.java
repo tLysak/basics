@@ -7,7 +7,7 @@ import java.util.HashMap;
  Add method addNewWord(String en, String ru), which add to “dictionary” new word in two languages.
  Add new method translate(String en) which take some string in English language and return this test translated
  to Russian language as value of String type.
- Create a class Main with a main( ) method.
+ Create a class MainWrapper1 with a main( ) method.
  Add to method main() code creates instance of MyTranslator. Add code to fill MyTranslator with few en-rus words
  pair by invoking addNewWord method.
  For example:

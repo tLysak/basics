@@ -13,23 +13,16 @@ public class Main {
         System.out.println("Enter your word");
         String translateInput = scanner.nextLine();
 
-        String myStr = translateInput;
-        StringTokenizer stringTokenizer = new StringTokenizer(myStr);
-        while (stringTokenizer.hasMoreElements()){
-            System.out.println(stringTokenizer.nextElement());
-
-        }
-// to do words separation of line
         MyTranslator translator = new MyTranslator();
-        translator.setTranslateInput(translateInput);
+
 
         translator.addNewWord("cat", "кот");
         translator.addNewWord("eats","ест");
         translator.addNewWord("mouse","мышь");
+
+        translator.setTranslateInput(translateInput);
+
         translator.translateRu();
-
-
-
 
 
 

@@ -5,12 +5,12 @@ package com.brainacad.skozigon.Labs.lads2_17.testthread2;
  * Created by skozigon on 22.06.2016.
  */
 public class MySumCount extends Thread{
-    int startIndex;
-    int stopIndex;
+    private int startIndex;
+    private int stopIndex;
 
-    int arr[];
+    private int arr[];
 
-    long resultSum;
+    private long resultSum;
 
 
     @Override

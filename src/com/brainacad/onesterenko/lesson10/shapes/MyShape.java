@@ -12,7 +12,7 @@ package com.brainacad.onesterenko.lesson10.shapes;
  Determine and extract numeric values form string and parse it to double type (using Double.parseDouble() method),
  to use it as arguments to create particular Shape object.
  Create particular Shape object and pass it to return statement;
- Add code to main() method in class Main, which creates one Rectangle, one Triangle and one Circle using Shape.parseShape
+ Add code to main() method in class MainWrapper1, which creates one Rectangle, one Triangle and one Circle using Shape.parseShape
  (String) method.
  Rewrite the Rectangle class to add new public static method called parseRectangle (String) which returns new object
  as Rectangle type based on string passed as argument.

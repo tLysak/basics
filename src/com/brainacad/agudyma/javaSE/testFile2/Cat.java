@@ -1,6 +1,9 @@
 package com.brainacad.agudyma.javaSE.testFile2;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -12,28 +15,40 @@ public class Cat {
 //        String userInput = scanner.nextLine();
         BufferedReader input = null;
 
+        String content = null;
         try {
-//            FileWriter writer = new FileWriter(file);
+            File file = new File("C:\\Users\\Sidhartha\\IdeaProjects\\basics\\src\\com\\brainacad\\agudyma\\javaSE\\Cat2.txt");
+            file.createNewFile();
+            if (file.exists()){
+            System.out.println(file.getName() + " file created");
+
+//            FileWriter writer = new FileWriter(new File("C:\\Users\\Sidhartha\\IdeaProjects\\basics\\src\\com\\brainacad\\agudyma\\javaSE\\Cat2.txt"));
 //            writer.write("This is the File class");
-//            File file = new File("C:\\Users\\User\\Desktop\\Cat.text");
-//            FileReader input = null;
+            }
 
-            input = new BufferedReader(new FileReader ("C:\\Users\\User\\Desktop\\Cat.text"));
+//            content = new Scanner(new File("C:\\Users\\Sidhartha\\Desktop\\Temnyy\\java\\Cat1.txt")).useDelimiter("\\Z").next();
+//            System.out.println(content);
 
-            String toConsole = input.readLine();
+            input = new BufferedReader(new FileReader("C:\\Users\\Sidhartha\\IdeaProjects\\basics\\src\\com\\brainacad\\agudyma\\javaSE\\Cat2.txt"));
+            if(input.readLine() !=null) {
 
-            System.out.println(toConsole);
+                String strLine;
 
+                while ((strLine = input.readLine()) != null)
 
+                System.out.println (strLine);
+
+                System.out.println(input.readLine());
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
-            if( input != null){
+        } finally {
+            if (input != null) {
                 input.close();
             }
-        }
 
+
+        }
     }
 }

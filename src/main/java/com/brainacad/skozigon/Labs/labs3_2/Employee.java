@@ -8,8 +8,15 @@ import java.io.Serializable;
 public class Employee implements Serializable{
     private String name;
     private String address;
-    private int SNN;
+    private transient int SNN;
     private int number;
+
+    public Employee(String name, String address, int SNN, int number) {
+        this.name = name;
+        this.address = address;
+        this.SNN = SNN;
+        this.number = number;
+    }
 
     public String getName() {
         return name;
@@ -45,6 +52,7 @@ public class Employee implements Serializable{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Employee name = " + getName() + "\nadress: " + getAddress() + "\nSNN: " + getSNN() + "\nnumber: " + getNumber();
+
     }
 }

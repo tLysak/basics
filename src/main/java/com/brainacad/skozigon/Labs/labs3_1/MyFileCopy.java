@@ -27,7 +27,7 @@ public class MyFileCopy {
             }
             time2 = System.currentTimeMillis();
             System.out.println(time2 - time1);
-        } catch (java.io.IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {

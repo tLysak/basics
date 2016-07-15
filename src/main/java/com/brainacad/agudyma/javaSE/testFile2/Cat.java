@@ -17,7 +17,7 @@ public class Cat {
 
         String content = null;
         try {
-            File file = new File("C:\\Users\\Sidhartha\\IdeaProjects\\basics\\src\\com\\brainacad\\agudyma\\javaSE\\Cat2.txt");
+            File file = new File("C:\\Users\\User\\Desktop\\Cat.text");
             file.createNewFile();
             if (file.exists()){
             System.out.println(file.getName() + " file created");
@@ -29,17 +29,17 @@ public class Cat {
 //            content = new Scanner(new File("C:\\Users\\Sidhartha\\Desktop\\Temnyy\\java\\Cat1.txt")).useDelimiter("\\Z").next();
 //            System.out.println(content);
 
-            input = new BufferedReader(new FileReader("C:\\Users\\Sidhartha\\IdeaProjects\\basics\\src\\com\\brainacad\\agudyma\\javaSE\\Cat2.txt"));
-            if(input.readLine() !=null) {
+            input = new BufferedReader(new FileReader(file));
+
 
                 String strLine;
 
-                while ((strLine = input.readLine()) != null)
+                while ((strLine = input.readLine()) != null) {
 
-                System.out.println (strLine);
+                    System.out.println(strLine);
+                }
 
-                System.out.println(input.readLine());
-            }
+
 
         } catch (IOException e) {
             e.printStackTrace();

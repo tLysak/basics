@@ -10,7 +10,7 @@ import java.io.Serializable;
  */
 public class Employee implements Serializable{
 
-    private enum SPECIALISATION{};
+    private enum SPECIALISATIONS{};
     private String name;
     private String adress;
     private transient int SSN;

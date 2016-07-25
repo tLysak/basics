@@ -1,4 +1,4 @@
-package main.java.com.brainacad.agudyma.javaSE.testSerializable;
+package com.brainacad.agudyma.javaSE.testSerializableT;
 
 import java.io.Serializable;
 
@@ -6,10 +6,10 @@ import java.io.Serializable;
  * Created by Sidhartha on 17.07.2016.
  */
 public class Employee implements Serializable{
-    String name;
-    String adress;
-    int SSN;
-    int number;
+    private String name;
+    private String adress;
+    private transient int  SSN;
+    private int number;
 
     public Employee(String name, String adress , int SSN, int number) {
         this.name = name;
@@ -36,6 +36,6 @@ public class Employee implements Serializable{
 
     @Override
     public String toString(){
-        return getClass() + " "+ getName()+" "+getAdress()+" "+getNumber();
+        return getClass() + " "+ getName()+" "+getAdress()+ " " +getSSN()+" "+getNumber();
     }
 }

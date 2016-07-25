@@ -1,4 +1,4 @@
-package main.java.com.brainacad.agudyma.javaSE.testSerializable;
+package com.brainacad.agudyma.javaSE.testSerializableT;
 
 import java.io.*;
 
@@ -14,11 +14,12 @@ public class TestSerializable {
 
 
 
-        FileOutputStream fis = new FileOutputStream("Employee.ser");
+        FileOutputStream fis = new FileOutputStream("C:\\Users\\User\\Desktop\\employee.ser");
         ObjectOutputStream oin = new ObjectOutputStream(fis);
 
      try{
          oin.writeObject(emp1);
+         oin.close();
      }catch (IOException e){
          e.printStackTrace();
      }

@@ -1,4 +1,4 @@
-package main.java.com.brainacad.agudyma.javaSE.testSerializable;
+package com.brainacad.agudyma.javaSE.testSerializableT;
 
 import java.io.*;
 
@@ -12,34 +12,30 @@ public class Deserialize {
 
         Employee memp2 = new Employee("Dima", "Rivne", 11, 11);
 
-            File file = new File("Employee.ser");
+            FileOutputStream fileOutputStream = null;
 
             try {
-
-                ObjectOutputStream oin = new ObjectOutputStream(new FileOutputStream(file));
+                fileOutputStream = new FileOutputStream("C:\\Users\\User\\Desktop\\employee.ser");
+                ObjectOutputStream oin = new ObjectOutputStream(fileOutputStream);
                 oin.writeObject(memp2);
-
+                oin.close();
             } catch (IOException e) {
                 e.printStackTrace();
-                
             }
-        if(file.exists()){
+
+
             try {
-                ObjectInputStream ois =new ObjectInputStream(new FileInputStream("Employee.ser"));
+                ObjectInputStream ois =new ObjectInputStream(new FileInputStream("C:\\Users\\User\\Desktop\\employee.ser"));
                 try {
                     Employee emp3 = (Employee)ois.readObject();
                     System.out.println(emp3);
+                    ois.close();
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
-        }
-            
-
-
 
     }
 }

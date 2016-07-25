@@ -10,6 +10,7 @@ public class Employee implements Serializable{
     private String address;
     private transient int SNN;
     private int number;
+    private transient int Salary;
 
     public Employee(String name, String address, int SNN, int number) {
         this.name = name;
@@ -52,7 +53,15 @@ public class Employee implements Serializable{
 
     @Override
     public String toString() {
-        return "Employee name = " + getName() + "\nadress: " + getAddress() + "\nSNN: " + getSNN() + "\nnumber: " + getNumber();
+        return "Employee name = " + getName() + "\nadress: " + getAddress() + "\nSNN: " + getSNN() + "\nnumber: " + getNumber()+ "\nnumber: " + getSalary();
 
+    }
+
+    public int getSalary() {
+        return Salary;
+    }
+
+    public void setSalary(int salary) {
+        Salary = salary;
     }
 }

@@ -9,19 +9,16 @@ import java.util.List;
  */
 public class Manager extends Employee implements Serializable{
     private final int rate;
-    private String spec;
-//    Spesialization spesialization;
+    private Spesialization spesialization;
+    List<Employee> listEmployee = new ArrayList<>();
 
-
-
-    public Manager(String name, String address, int SNN, int number, int rate) {
+    public Manager(String name, String address, int SNN, int number, int rate, Spesialization spesialization) {
         super(name, address, SNN, number);
         this.rate = rate;
-//        this.spec = spec;
-
-//        spesialization = Spesialization.valueOf(this.spec);
+        this.spesialization = spesialization;
     }
-    List<Employee> listEmployee = new ArrayList<Employee>();
+
+
 
     public int getRate() {
         return rate;
@@ -35,4 +32,11 @@ public class Manager extends Employee implements Serializable{
     }
 
 
+    public Spesialization getSpesialization() {
+        return spesialization;
+    }
+
+    public void setSpesialization(Spesialization spesialization) {
+        this.spesialization = spesialization;
+    }
 }

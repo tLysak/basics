@@ -40,22 +40,40 @@ public class TestDB {
         }
         String str = "INSERT INTO brainacad.students" + "(id, NAME,LAST_NAME,EMAIL,AGE)" + "VALUES(?,?,?,?,?);";
         try(PreparedStatement ps = dbConnection.prepareStatement(str)) {
-            ps.setInt(1,7);
-            ps.setString(2,"Solomon");
-            ps.setString(3,"Goldman");
-            ps.setString(4,"sogo1488@gmail.com");
-            ps.setString(5, "22");
-            ps.executeUpdate();
-            System.out.println("INSERT OK!!!");
+//            ps.setInt(1,7);
+//            ps.setString(2,"Solomon");
+//            ps.setString(3,"Goldman");
+//            ps.setString(4,"sogo1488@gmail.com");
+//            ps.setString(5, "22");
+//            ps.executeUpdate();
+//            System.out.println("INSERT OK!!!");
+//
+
+             for (int n = 0; n<100;n++) {
+                       Random random = new Random();
+                      String defaultId = String.valueOf(random.nextInt(100));
+                     String[] defaultName = {"Isaac", "Solomon", "David", "Benjamin"};
+                     String[] defaultLastName = {"Rabinovich", "Feldman", "Abramovich", "Rottenberg"};
+                  String defaultEmail = defaultName[random.nextInt(4)] + defaultLastName[random.nextInt(4)] + "1488@gmail.com";
+                    ps.setInt(1,random.nextInt(100));
+                 ps.setString(2,defaultName[random.nextInt(4)]);
+                 ps.setString(3,defaultLastName[random.nextInt(4)]);
+                 ps.setString(4,defaultEmail);
+                 ps.setInt(5,random.nextInt(100));
 
 
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(Statement st = dbConnection.createStatement()){
 
-         Random random = new Random();
-            String defaultId = String.valueOf(random.nextInt());
-            String [] defaultName = {"Isaac", "Solomon","David", "Benjamin"};
-            String [] defaultLastName = {"Rabinovich", "Feldman","Abramovich","Rottenberg"};
-            String defaultEmail = defaultName[random.nextInt(4)] + defaultLastName[random.nextInt(4)] + "1488@gmail.com";
-
+            ResultSet rs = st.executeQuery("SELECT * FROM students;");
+            ResultSetMetaData md = rs.getMetaData();
+            for(int i =1; i<=md.getColumnCount();i++){
+                System.out.println(md.getColumnName(i)+"\t\t");
+            }
+            System.out.println();
 
 
         } catch (SQLException e) {

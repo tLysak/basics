@@ -46,7 +46,7 @@ public class Students {
     }
 
     public String getString(){
-        return "INSERT INTO students (id, NAME, LASTNAME, email, age) VALUES(?,?,?,?,?)";
+        return "INSERT INTO students (NAME, LASTNAME, email, age) VALUES(?,?,?,?)";
     }
 
 

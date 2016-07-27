@@ -9,9 +9,10 @@ public class Main {
     public static String DB_CONNECTION = "jdbc:mysql://127.0.0.1:3306/brainacad?useSSL=false";
     public static String DB_USER = "grey";
     public static String DB_PASS = "nogi";
+    static double time = 0;
     public static void main(String[] args) {
 
-//        Students students = new Students();
+        Students students = new Students();
 
         Connection dbConnection = null;
         try {
@@ -20,19 +21,85 @@ public class Main {
             e.printStackTrace();
         }
 
-        try(Statement st = dbConnection.createStatement()){
-            st.execute("SELECT * FROM students WHERE age>20");
+        time = System.currentTimeMillis();
+        try {
+            dbConnection.setAutoCommit(false);
 
-            ResultSet rs = st.executeQuery("SELECT * FROM students;");
+            try (PreparedStatement ps = dbConnection.prepareStatement(students.getString())) {
+                for (int i = 0; i <= 100; i++) {
+                    students.setId(i + 1);
+                    ps.setInt(1, students.getId());
+                    ps.setString(2, students.getName());
+                    ps.setString(3, students.getLastname());
+                    ps.setString(4, students.getEmail());
+                    ps.setInt(5, students.getAge());
+                    ps.executeUpdate();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } catch (SQLException e){
+            try {
+                dbConnection.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+        } finally {
+            try {
+                dbConnection.commit();
+                System.out.println("Time fool transaction:" + (System.currentTimeMillis() - time) );
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        time = System.currentTimeMillis();
+        try (PreparedStatement ps = dbConnection.prepareStatement(students.getString())) {
+            for (int i = 101; i <= 200; i++) {
+                try {
+                    dbConnection.setAutoCommit(false);
+                    students.setId(i + 1);
+                    ps.setInt(1, students.getId());
+                    ps.setString(2, students.getName());
+                    ps.setString(3, students.getLastname());
+                    ps.setString(4, students.getEmail());
+                    ps.setInt(5, students.getAge());
+                    ps.executeUpdate();
+                }
+                catch (SQLException e){
+                    try {
+                        dbConnection.rollback();
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                } finally {
+                    try {
+                        dbConnection.commit();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Time current transaction: " + (System.currentTimeMillis() - time) );
+
+
+        try(Statement st = dbConnection.createStatement()){
+            st.execute("SELECT * FROM students ");
+
+            ResultSet rs = st.executeQuery("SELECT * FROM students WHERE age>20;");
             ResultSetMetaData md = rs.getMetaData();
             for (int i = 1; i <= md.getColumnCount(); i++) {
-                System.out.print(md.getColumnName(i)+ "\t\t\t");
+                System.out.print(md.getColumnName(i)+ "\t\t\t\t\t\t\t");
 
             }
             System.out.println();
             while (rs.next()){
                 for (int i = 1; i <= md.getColumnCount() ; i++) {
-                    System.out.print(rs.getString(i) + "\t\t\t");
+                    System.out.print(rs.getString(i) + "\t\t\t\t\t\t\t");
                 }
                 System.out.println();
             }
@@ -44,23 +111,15 @@ public class Main {
                 String firstName = rs1.getString("NAME");
                 String lastNme = rs1.getString("LASTNAME");
                 int age = rs.getInt("age");
-                System.out.printf("%s,%s,%s,%s",id, firstName, lastNme, age);
+                String email = rs.getString("email");
+                System.out.printf("%s,%s,%s,%s,%s",id, firstName, lastNme, email, age);
                 System.out.println();
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-//        try(PreparedStatement ps = dbConnection.prepareCall(students.getString())){
-//            for (int i = 0; i <100 ; i++) {
-//                ps.setInt(1,students.getId());
-//                ps.setString(2, students.getName());
-//                ps.setString(3, students.getLastname());
-//            }
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+
 
 
     }

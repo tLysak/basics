@@ -7,7 +7,7 @@ import java.util.Random;
 /**
  * Created by User on 7/25/2016.
  */
-public class TestDB {
+public class TestDB1 {
     private static final java.lang.String DB_CONNECTION = "jdbc:mysql://10.11.0.132:3306/brainacad?useSSL=false";
     private static final String DB_PASSWORD = "130245";
     private static final String DB_USER = "Sidhartha";
@@ -31,8 +31,10 @@ public class TestDB {
                 int id = rs.getInt("id");
                 String firstName = rs.getString("NAME");
                 String lastName = rs.getString("LAST_NAME");
+                String email = rs.getString("EMAIL");
+                int age = rs.getInt("age");
 //                int rate = rs.getInt("RATE");
-                System.out.printf("%s,%s,%s", id, firstName, lastName );
+                System.out.printf(" %s, %s, %s, %s, %s", id, firstName, lastName,email, age );
                 System.out.println();
             }
         } catch (SQLException e) {
@@ -48,19 +50,20 @@ public class TestDB {
 //            ps.executeUpdate();
 //            System.out.println("INSERT OK!!!");
 //
+            Random random = new Random();
+            String[] defaultName = {"Isaac", "Solomon", "David", "Benjamin"};
+            String[] defaultLastName = {"Rabinovich", "Feldman", "Abramovich", "Rottenberg"};
 
              for (int n = 0; n<100;n++) {
-                       Random random = new Random();
-                      String defaultId = String.valueOf(random.nextInt(100));
-                     String[] defaultName = {"Isaac", "Solomon", "David", "Benjamin"};
-                     String[] defaultLastName = {"Rabinovich", "Feldman", "Abramovich", "Rottenberg"};
-                  String defaultEmail = defaultName[random.nextInt(4)] + defaultLastName[random.nextInt(4)] + "1488@gmail.com";
-                    ps.setInt(1,random.nextInt(100));
-                 ps.setString(2,defaultName[random.nextInt(4)]);
-                 ps.setString(3,defaultLastName[random.nextInt(4)]);
-                 ps.setString(4,defaultEmail);
-                 ps.setInt(5,random.nextInt(100));
 
+                  String defaultEmail = defaultName[random.nextInt(4)] + defaultLastName[random.nextInt(4)] + "1488@gmail.com";
+
+//                 ps.setInt(1,random.nextInt(100));
+                 ps.setString(1,defaultName[random.nextInt(4)]);
+                 ps.setString(2,defaultLastName[random.nextInt(4)]);
+                 ps.setString(3,defaultEmail);
+                 ps.setInt(4,random.nextInt(100));
+                 ps.executeUpdate();
 
             }
         } catch (SQLException e) {

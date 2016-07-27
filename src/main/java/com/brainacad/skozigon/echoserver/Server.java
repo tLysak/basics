@@ -32,12 +32,15 @@ public class Server {
 
                 System.out.println("Sending back...");
 
-                 list = new File(string).list();
-                for(int i = 0; i < list.length; i++){
-                    out.writeUTF(list[i]);
-            }
 
-                out.flush();
+                     list = new File(string).list();
+
+                for(int i = 0; i < list.length; i++) {
+                    out.writeUTF(list[i]);
+                    out.flush();
+                }
+
+
                 System.out.println("Waiting next line...");
                 System.out.println();
             }

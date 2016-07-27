@@ -6,33 +6,28 @@ import java.sql.*;
  * Created by skozigon on 25.07.2016.
  */
 public class Main {
-    public static String DB_CONNECTION = "jdbc:mysql://127.0.0.1:3306/brainacad?useSSL=false";
-    public static String DB_USER = "grey";
-    public static String DB_PASS = "nogi";
+    public static final String DB_CONNECTION = "jdbc:mysql://127.0.0.1:3306/brainacad?useSSL=false";
+    public static String DB_USER = "tymur";
+    public static String DB_PASS = "tymur";
     static double time = 0;
     public static void main(String[] args) {
 
         Students students = new Students();
 
         Connection dbConnection = null;
+
+
         try {
             dbConnection = DriverManager.getConnection(DB_CONNECTION, DB_USER,DB_PASS);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        time = System.currentTimeMillis();
-        try {
+            time = System.currentTimeMillis();
             dbConnection.setAutoCommit(false);
 
             try (PreparedStatement ps = dbConnection.prepareStatement(students.getString())) {
                 for (int i = 0; i <= 100; i++) {
-                    students.setId(i + 1);
-                    ps.setInt(1, students.getId());
-                    ps.setString(2, students.getName());
-                    ps.setString(3, students.getLastname());
-                    ps.setString(4, students.getEmail());
-                    ps.setInt(5, students.getAge());
+                    ps.setString(1, students.getName());
+                    ps.setString(2, students.getLastname());
+                    ps.setString(3, students.getEmail());
+                    ps.setInt(4, students.getAge());
                     ps.executeUpdate();
                 }
             } catch (SQLException e) {
@@ -54,16 +49,15 @@ public class Main {
         }
 
         time = System.currentTimeMillis();
+
         try (PreparedStatement ps = dbConnection.prepareStatement(students.getString())) {
             for (int i = 101; i <= 200; i++) {
                 try {
                     dbConnection.setAutoCommit(false);
-                    students.setId(i + 1);
-                    ps.setInt(1, students.getId());
-                    ps.setString(2, students.getName());
-                    ps.setString(3, students.getLastname());
-                    ps.setString(4, students.getEmail());
-                    ps.setInt(5, students.getAge());
+                    ps.setString(1, students.getName());
+                    ps.setString(2, students.getLastname());
+                    ps.setString(3, students.getEmail());
+                    ps.setInt(4, students.getAge());
                     ps.executeUpdate();
                 }
                 catch (SQLException e){

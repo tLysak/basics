@@ -66,6 +66,5 @@ public class TestReflection {
         for (Field field : fields2) {
             System.out.println("All fields: " + field);
         }
-
     }
 }

@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.hashmaps;
+package com.brainacad.vmarch.labs.hashmaps;
 
 import java.util.HashMap;
 import java.util.Map;

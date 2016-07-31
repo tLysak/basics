@@ -1,9 +1,7 @@
-package com.brainacad.vmarch.jframe;
+package com.brainacad.vmarch.labs.jframe;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -13,6 +11,7 @@ public class MySwing {
     public static void main(String[] args) {
 
         JFrame jfrm = new JFrame("My Program");
+
         jfrm.setSize(340, 250);
         jfrm.setLocation(100, 200);
         jfrm.setVisible(true);
@@ -36,8 +35,7 @@ public class MySwing {
 
         jbtn.setSize(100, 35);
         jbtn.setLocation(12, 30);
-        jbtn.setForeground(Color.GREEN
-        );
+        jbtn.setForeground(Color.GREEN);
         jbtn.setBackground(Color.YELLOW);
         jfrm.add(jbtn);
 

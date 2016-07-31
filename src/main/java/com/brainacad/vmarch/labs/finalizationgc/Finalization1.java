@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.finalizationgc;
+package com.brainacad.vmarch.labs.finalizationgc;
 
 
 public class Finalization1 {

@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.finalizationgc;
+package com.brainacad.vmarch.labs.finalizationgc;
 
 /**
  * Created by User on 29/07/2016.
@@ -9,7 +9,7 @@ public class MainFinalization1 {
         obj1 = null;
         System.out.println("The One: " + obj1);
         System.gc();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         System.out.println("obj1 = " + obj1);
     }
 }

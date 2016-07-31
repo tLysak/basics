@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.testreflection;
+package com.brainacad.vmarch.labs.testreflection;
 
 // Write code to discover created object and print all information about fields,
 // constructors and methods to console.
@@ -8,6 +8,7 @@ package com.brainacad.vmarch.testreflection;
 import java.lang.reflect.Field;
 
 public class TestReflection {
+
     private int a;
     public int c;
     final int b = 12;
@@ -50,6 +51,7 @@ public class TestReflection {
         this.d = d;
     }
 
+
     public static void main(String[] args) {
 
         TestReflection obj = new TestReflection(10);
@@ -65,6 +67,7 @@ public class TestReflection {
         Field[] fields2 = myMyClass.getDeclaredFields();
         for (Field field : fields2) {
             System.out.println("All fields: " + field);
+
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Lesson7.myinittest;
+package com.brainacad.vmarch.lesson7.myinittest;
 
 
 public class MyInitTest {

@@ -1,4 +1,4 @@
-package com.brainacad.vmarch.Lesson7.myinit;
+package com.brainacad.vmarch.lesson7.myinit;
 
 
 public class MainMyInit {

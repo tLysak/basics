@@ -7,7 +7,7 @@ import java.util.Random;
 /**
  * Created by User on 7/25/2016.
  */
-public class TestDB {
+public class TestDB1 {
     private static final java.lang.String DB_CONNECTION = "jdbc:mysql://10.11.0.132:3306/brainacad?useSSL=false";
     private static final String DB_PASSWORD = "130245";
     private static final String DB_USER = "Sidhartha";
